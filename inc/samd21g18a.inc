@@ -1344,185 +1344,176 @@ EIC_CONFIG_FILTEN7                      EQU BIT_POS_31
 
 
 
-;SERCOM_offset									EQU 0x00000400
-;SERCOM0												EQU SERCOM
-;SERCOM1												EQU SERCOM0 + SERCOM_offset
-;SERCOM2												EQU SERCOM1 + SERCOM_offset
-;SERCOM3												EQU SERCOM2 + SERCOM_offset
-;SERCOM4												EQU SERCOM3 + SERCOM_offset
-;SERCOM5												EQU SERCOM4 + SERCOM_offset
-
-
 ; I2CM
-I2CM_CTRLA_offset							EQU 0x00
-I2CM_CTRLB_offset							EQU 0x04
-I2CM_BAUD_offset							EQU 0x0c
-I2CM_INTENCLR_offset					EQU 0x14
-I2CM_INTENSET_offset					EQU 0x16
-I2CM_INTFLAG_offset						EQU 0x18
-I2CM_STATUS_offset						EQU 0x1a
-I2CM_SYNCBUSY_offset					EQU 0x1c
-I2CM_ADDR_offset							EQU 0x24
-I2CM_DATA_offset							EQU 0x28
-I2CM_DBGCTRL_offset						EQU 0x30
+I2CM_CTRLA_offset                       EQU 0x00
+I2CM_CTRLB_offset                       EQU 0x04
+I2CM_BAUD_offset                        EQU 0x0c
+I2CM_INTENCLR_offset                    EQU 0x14
+I2CM_INTENSET_offset                    EQU 0x16
+I2CM_INTFLAG_offset                     EQU 0x18
+I2CM_STATUS_offset                      EQU 0x1a
+I2CM_SYNCBUSY_offset                    EQU 0x1c
+I2CM_ADDR_offset                        EQU 0x24
+I2CM_DATA_offset                        EQU 0x28
+I2CM_DBGCTRL_offset                     EQU 0x30
 
-I2CM0_CTRLA										EQU SERCOM0 + I2CM_CTRLA_offset
-I2CM0_CTRLB										EQU SERCOM0 + I2CM_CTRLB_offset
-I2CM0_BAUD										EQU SERCOM0 + I2CM_BAUD_offset
-I2CM0_INTENCLR								EQU SERCOM0 + I2CM_INTENCLR_offset
-I2CM0_INTENSET								EQU SERCOM0 + I2CM_INTENSET_offset
-I2CM0_INTFLAG									EQU SERCOM0 + I2CM_INTFLAG_offset
-I2CM0_STATUS									EQU SERCOM0 + I2CM_STATUS_offset
-I2CM0_SYNCBUSY								EQU SERCOM0 + I2CM_SYNCBUSY_offset
-I2CM0_ADDR										EQU SERCOM0 + I2CM_ADDR_offset
-I2CM0_DATA										EQU SERCOM0 + I2CM_DATA_offset
-I2CM0_DBGCTRL									EQU SERCOM0 + I2CM_DBGCTRL_offset
+I2CM0_CTRLA                             EQU SERCOM0 + I2CM_CTRLA_offset
+I2CM0_CTRLB                             EQU SERCOM0 + I2CM_CTRLB_offset
+I2CM0_BAUD                              EQU SERCOM0 + I2CM_BAUD_offset
+I2CM0_INTENCLR                          EQU SERCOM0 + I2CM_INTENCLR_offset
+I2CM0_INTENSET                          EQU SERCOM0 + I2CM_INTENSET_offset
+I2CM0_INTFLAG                           EQU SERCOM0 + I2CM_INTFLAG_offset
+I2CM0_STATUS                            EQU SERCOM0 + I2CM_STATUS_offset
+I2CM0_SYNCBUSY                          EQU SERCOM0 + I2CM_SYNCBUSY_offset
+I2CM0_ADDR                              EQU SERCOM0 + I2CM_ADDR_offset
+I2CM0_DATA                              EQU SERCOM0 + I2CM_DATA_offset
+I2CM0_DBGCTRL                           EQU SERCOM0 + I2CM_DBGCTRL_offset
 
-I2CM1_CTRLA										EQU SERCOM1 + I2CM_CTRLA_offset
-I2CM1_CTRLB										EQU SERCOM1 + I2CM_CTRLB_offset
-I2CM1_BAUD										EQU SERCOM1 + I2CM_BAUD_offset
-I2CM1_INTENCLR								EQU SERCOM1 + I2CM_INTENCLR_offset
-I2CM1_INTENSET								EQU SERCOM1 + I2CM_INTENSET_offset
-I2CM1_INTFLAG									EQU SERCOM1 + I2CM_INTFLAG_offset
-I2CM1_STATUS									EQU SERCOM1 + I2CM_STATUS_offset
-I2CM1_SYNCBUSY								EQU SERCOM1 + I2CM_SYNCBUSY_offset
-I2CM1_ADDR										EQU SERCOM1 + I2CM_ADDR_offset
-I2CM1_DATA										EQU SERCOM1 + I2CM_DATA_offset
-I2CM1_DBGCTRL									EQU SERCOM1 + I2CM_DBGCTRL_offset
+I2CM1_CTRLA                             EQU SERCOM1 + I2CM_CTRLA_offset
+I2CM1_CTRLB                             EQU SERCOM1 + I2CM_CTRLB_offset
+I2CM1_BAUD                              EQU SERCOM1 + I2CM_BAUD_offset
+I2CM1_INTENCLR                          EQU SERCOM1 + I2CM_INTENCLR_offset
+I2CM1_INTENSET                          EQU SERCOM1 + I2CM_INTENSET_offset
+I2CM1_INTFLAG                           EQU SERCOM1 + I2CM_INTFLAG_offset
+I2CM1_STATUS                            EQU SERCOM1 + I2CM_STATUS_offset
+I2CM1_SYNCBUSY                          EQU SERCOM1 + I2CM_SYNCBUSY_offset
+I2CM1_ADDR                              EQU SERCOM1 + I2CM_ADDR_offset
+I2CM1_DATA                              EQU SERCOM1 + I2CM_DATA_offset
+I2CM1_DBGCTRL                           EQU SERCOM1 + I2CM_DBGCTRL_offset
 
-I2CM2_CTRLA										EQU SERCOM2 + I2CM_CTRLA_offset
-I2CM2_CTRLB										EQU SERCOM2 + I2CM_CTRLB_offset
-I2CM2_BAUD										EQU SERCOM2 + I2CM_BAUD_offset
-I2CM2_INTENCLR								EQU SERCOM2 + I2CM_INTENCLR_offset
-I2CM2_INTENSET								EQU SERCOM2 + I2CM_INTENSET_offset
-I2CM2_INTFLAG									EQU SERCOM2 + I2CM_INTFLAG_offset
-I2CM2_STATUS									EQU SERCOM2 + I2CM_STATUS_offset
-I2CM2_SYNCBUSY								EQU SERCOM2 + I2CM_SYNCBUSY_offset
-I2CM2_ADDR										EQU SERCOM2 + I2CM_ADDR_offset
-I2CM2_DATA										EQU SERCOM2 + I2CM_DATA_offset
-I2CM2_DBGCTRL									EQU SERCOM2 + I2CM_DBGCTRL_offset
+I2CM2_CTRLA                             EQU SERCOM2 + I2CM_CTRLA_offset
+I2CM2_CTRLB                             EQU SERCOM2 + I2CM_CTRLB_offset
+I2CM2_BAUD                              EQU SERCOM2 + I2CM_BAUD_offset
+I2CM2_INTENCLR                          EQU SERCOM2 + I2CM_INTENCLR_offset
+I2CM2_INTENSET                          EQU SERCOM2 + I2CM_INTENSET_offset
+I2CM2_INTFLAG                           EQU SERCOM2 + I2CM_INTFLAG_offset
+I2CM2_STATUS                            EQU SERCOM2 + I2CM_STATUS_offset
+I2CM2_SYNCBUSY                          EQU SERCOM2 + I2CM_SYNCBUSY_offset
+I2CM2_ADDR                              EQU SERCOM2 + I2CM_ADDR_offset
+I2CM2_DATA                              EQU SERCOM2 + I2CM_DATA_offset
+I2CM2_DBGCTRL                           EQU SERCOM2 + I2CM_DBGCTRL_offset
 
-I2CM3_CTRLA										EQU SERCOM3 + I2CM_CTRLA_offset
-I2CM3_CTRLB										EQU SERCOM3 + I2CM_CTRLB_offset
-I2CM3_BAUD										EQU SERCOM3 + I2CM_BAUD_offset
-I2CM3_INTENCLR								EQU SERCOM3 + I2CM_INTENCLR_offset
-I2CM3_INTENSET								EQU SERCOM3 + I2CM_INTENSET_offset
-I2CM3_INTFLAG									EQU SERCOM3 + I2CM_INTFLAG_offset
-I2CM3_STATUS									EQU SERCOM3 + I2CM_STATUS_offset
-I2CM3_SYNCBUSY								EQU SERCOM3 + I2CM_SYNCBUSY_offset
-I2CM3_ADDR										EQU SERCOM3 + I2CM_ADDR_offset
-I2CM3_DATA										EQU SERCOM3 + I2CM_DATA_offset
-I2CM3_DBGCTRL									EQU SERCOM3 + I2CM_DBGCTRL_offset
+I2CM3_CTRLA                             EQU SERCOM3 + I2CM_CTRLA_offset
+I2CM3_CTRLB                             EQU SERCOM3 + I2CM_CTRLB_offset
+I2CM3_BAUD                              EQU SERCOM3 + I2CM_BAUD_offset
+I2CM3_INTENCLR                          EQU SERCOM3 + I2CM_INTENCLR_offset
+I2CM3_INTENSET                          EQU SERCOM3 + I2CM_INTENSET_offset
+I2CM3_INTFLAG                           EQU SERCOM3 + I2CM_INTFLAG_offset
+I2CM3_STATUS                            EQU SERCOM3 + I2CM_STATUS_offset
+I2CM3_SYNCBUSY                          EQU SERCOM3 + I2CM_SYNCBUSY_offset
+I2CM3_ADDR                              EQU SERCOM3 + I2CM_ADDR_offset
+I2CM3_DATA                              EQU SERCOM3 + I2CM_DATA_offset
+I2CM3_DBGCTRL                           EQU SERCOM3 + I2CM_DBGCTRL_offset
 
-I2CM4_CTRLA										EQU SERCOM4 + I2CM_CTRLA_offset
-I2CM4_CTRLB										EQU SERCOM4 + I2CM_CTRLB_offset
-I2CM4_BAUD										EQU SERCOM4 + I2CM_BAUD_offset
-I2CM4_INTENCLR								EQU SERCOM4 + I2CM_INTENCLR_offset
-I2CM4_INTENSET								EQU SERCOM4 + I2CM_INTENSET_offset
-I2CM4_INTFLAG									EQU SERCOM4 + I2CM_INTFLAG_offset
-I2CM4_STATUS									EQU SERCOM4 + I2CM_STATUS_offset
-I2CM4_SYNCBUSY								EQU SERCOM4 + I2CM_SYNCBUSY_offset
-I2CM4_ADDR										EQU SERCOM4 + I2CM_ADDR_offset
-I2CM4_DATA										EQU SERCOM4 + I2CM_DATA_offset
-I2CM4_DBGCTRL									EQU SERCOM4 + I2CM_DBGCTRL_offset
+I2CM4_CTRLA                             EQU SERCOM4 + I2CM_CTRLA_offset
+I2CM4_CTRLB                             EQU SERCOM4 + I2CM_CTRLB_offset
+I2CM4_BAUD                              EQU SERCOM4 + I2CM_BAUD_offset
+I2CM4_INTENCLR                          EQU SERCOM4 + I2CM_INTENCLR_offset
+I2CM4_INTENSET                          EQU SERCOM4 + I2CM_INTENSET_offset
+I2CM4_INTFLAG                           EQU SERCOM4 + I2CM_INTFLAG_offset
+I2CM4_STATUS                            EQU SERCOM4 + I2CM_STATUS_offset
+I2CM4_SYNCBUSY                          EQU SERCOM4 + I2CM_SYNCBUSY_offset
+I2CM4_ADDR                              EQU SERCOM4 + I2CM_ADDR_offset
+I2CM4_DATA                              EQU SERCOM4 + I2CM_DATA_offset
+I2CM4_DBGCTRL                           EQU SERCOM4 + I2CM_DBGCTRL_offset
 
-I2CM5_CTRLA										EQU SERCOM5 + I2CM_CTRLA_offset
-I2CM5_CTRLB										EQU SERCOM5 + I2CM_CTRLB_offset
-I2CM5_BAUD										EQU SERCOM5 + I2CM_BAUD_offset
-I2CM5_INTENCLR								EQU SERCOM5 + I2CM_INTENCLR_offset
-I2CM5_INTENSET								EQU SERCOM5 + I2CM_INTENSET_offset
-I2CM5_INTFLAG									EQU SERCOM5 + I2CM_INTFLAG_offset
-I2CM5_STATUS									EQU SERCOM5 + I2CM_STATUS_offset
-I2CM5_SYNCBUSY								EQU SERCOM5 + I2CM_SYNCBUSY_offset
-I2CM5_ADDR										EQU SERCOM5 + I2CM_ADDR_offset
-I2CM5_DATA										EQU SERCOM5 + I2CM_DATA_offset
-I2CM5_DBGCTRL									EQU SERCOM5 + I2CM_DBGCTRL_offset
+I2CM5_CTRLA                             EQU SERCOM5 + I2CM_CTRLA_offset
+I2CM5_CTRLB                             EQU SERCOM5 + I2CM_CTRLB_offset
+I2CM5_BAUD                              EQU SERCOM5 + I2CM_BAUD_offset
+I2CM5_INTENCLR                          EQU SERCOM5 + I2CM_INTENCLR_offset
+I2CM5_INTENSET                          EQU SERCOM5 + I2CM_INTENSET_offset
+I2CM5_INTFLAG                           EQU SERCOM5 + I2CM_INTFLAG_offset
+I2CM5_STATUS                            EQU SERCOM5 + I2CM_STATUS_offset
+I2CM5_SYNCBUSY                          EQU SERCOM5 + I2CM_SYNCBUSY_offset
+I2CM5_ADDR                              EQU SERCOM5 + I2CM_ADDR_offset
+I2CM5_DATA                              EQU SERCOM5 + I2CM_DATA_offset
+I2CM5_DBGCTRL                           EQU SERCOM5 + I2CM_DBGCTRL_offset
 
 
-I2CM_CTRLA_SWRST							EQU BIT_POS_0
-I2CM_CTRLA_ENABLE							EQU BIT_POS_1
-I2CM_CTRLA_MODE_USART_EXT_CLK	EQU 0x00
-I2CM_CTRLA_MODE_USART_INT_CLK	EQU 0x04
-I2CM_CTRLA_MODE_SPI_SLAVE			EQU 0x08
-I2CM_CTRLA_MODE_SPI_MASTER		EQU 0x0c
-I2CM_CTRLA_MODE_I2C_SLAVE			EQU 0x10
-I2CM_CTRLA_MODE_I2C_MASTER		EQU 0x14
-I2CM_CTRLA_RUNSTDBY						EQU BIT_POS_7
-I2CM_CTRLA_PINOUT							EQU BIT_POS_16
-I2CM_CTRLA_SDAHOLD						EQU 0x0
-I2CM_CTRLA_SDAHOLD_Pos				EQU 20
-I2CM_CTRLA_MEXTTOEN						EQU BIT_POS_22
-I2CM_CTRLA_SEXTTOEN						EQU BIT_POS_23
-I2CM_CTRLA_SPEED							EQU 0x0
-I2CM_CTRLA_SPEED_Pos					EQU 24
-I2CM_CTRLA_SCLSM							EQU BIT_POS_27
-I2CM_CTRLA_INACTOUT						EQU 0x0
-I2CM_CTRLA_INACTOUT_Pos				EQU 28
-I2CM_CTRLA_LOWTOUTEN					EQU BIT_POS_30
+I2CM_CTRLA_SWRST                        EQU BIT_POS_0
+I2CM_CTRLA_ENABLE                       EQU BIT_POS_1
+I2CM_CTRLA_MODE_USART_EXT_CLK           EQU 0x00
+I2CM_CTRLA_MODE_USART_INT_CLK           EQU 0x04
+I2CM_CTRLA_MODE_SPI_SLAVE               EQU 0x08
+I2CM_CTRLA_MODE_SPI_MASTER              EQU 0x0c
+I2CM_CTRLA_MODE_I2C_SLAVE               EQU 0x10
+I2CM_CTRLA_MODE_I2C_MASTER              EQU 0x14
+I2CM_CTRLA_RUNSTDBY                     EQU BIT_POS_7
+I2CM_CTRLA_PINOUT                       EQU BIT_POS_16
+I2CM_CTRLA_SDAHOLD                      EQU 0x0
+I2CM_CTRLA_SDAHOLD_Pos                  EQU 20
+I2CM_CTRLA_MEXTTOEN                     EQU BIT_POS_22
+I2CM_CTRLA_SEXTTOEN                     EQU BIT_POS_23
+I2CM_CTRLA_SPEED                        EQU 0x0
+I2CM_CTRLA_SPEED_Pos                    EQU 24
+I2CM_CTRLA_SCLSM                        EQU BIT_POS_27
+I2CM_CTRLA_INACTOUT                     EQU 0x0
+I2CM_CTRLA_INACTOUT_Pos                 EQU 28
+I2CM_CTRLA_LOWTOUTEN                    EQU BIT_POS_30
 
-I2CM_CTRLB_SMEN								EQU BIT_POS_8
-I2CM_CTRLB_QCEN								EQU BIT_POS_9
-I2CM_CTRLB_CMD								EQU 0x0
-I2CM_CTRLB_CMD_Pos						EQU 16
-I2CM_CTRLB_ACKACT							EQU BIT_POS_18
+I2CM_CTRLB_SMEN                         EQU BIT_POS_8
+I2CM_CTRLB_QCEN                         EQU BIT_POS_9
+I2CM_CTRLB_CMD                          EQU 0x0
+I2CM_CTRLB_CMD_Pos                      EQU 16
+I2CM_CTRLB_ACKACT                       EQU BIT_POS_18
 
-I2CM_BAUD_BAUD								EQU 0x00
-I2CM_BAUD_BAUD_Pos						EQU 0
-I2CM_BAUD_BAUDLOW							EQU 0x00
-I2CM_BAUD_BAUDLOW_Pos					EQU 8
-I2CM_BAUD_HSBAUD							EQU 0x00
-I2CM_BAUD_HSBAUD_Pos					EQU 16
-I2CM_BAUD_HSBAUDLOW						EQU 0x00
-I2CM_BAUD_HSBAUDLOW_Pos				EQU 24
+I2CM_BAUD_BAUD                          EQU 0x00
+I2CM_BAUD_BAUD_Pos                      EQU 0
+I2CM_BAUD_BAUDLOW                       EQU 0x00
+I2CM_BAUD_BAUDLOW_Pos                   EQU 8
+I2CM_BAUD_HSBAUD                        EQU 0x00
+I2CM_BAUD_HSBAUD_Pos                    EQU 16
+I2CM_BAUD_HSBAUDLOW                     EQU 0x00
+I2CM_BAUD_HSBAUDLOW_Pos                 EQU 24
 
-I2CM_INTENCLR_MB							EQU BIT_POS_0
-I2CM_INTENCLR_SB							EQU BIT_POS_1
-I2CM_INTENCLR_ERROR						EQU BIT_POS_7
+I2CM_INTENCLR_MB                        EQU BIT_POS_0
+I2CM_INTENCLR_SB                        EQU BIT_POS_1
+I2CM_INTENCLR_ERROR                     EQU BIT_POS_7
 
-I2CM_INTENSET_MB							EQU BIT_POS_0
-I2CM_INTENSET_SB							EQU BIT_POS_1
-I2CM_INTENSET_ERROR						EQU BIT_POS_7
+I2CM_INTENSET_MB                        EQU BIT_POS_0
+I2CM_INTENSET_SB                        EQU BIT_POS_1
+I2CM_INTENSET_ERROR                     EQU BIT_POS_7
 
-I2CM_INTFLAG_MB								EQU BIT_POS_0
-I2CM_INTFLAG_MB_Pos						EQU 0
-I2CM_INTFLAG_SB								EQU BIT_POS_1
-I2CM_INTFLAG_SB_Pos						EQU 1
-I2CM_INTFLAG_ERROR						EQU BIT_POS_7
-I2CM_INTFLAG_ERROR_Pos				EQU 7
+I2CM_INTFLAG_MB                         EQU BIT_POS_0
+I2CM_INTFLAG_MB_Pos                     EQU 0
+I2CM_INTFLAG_SB                         EQU BIT_POS_1
+I2CM_INTFLAG_SB_Pos                     EQU 1
+I2CM_INTFLAG_ERROR                      EQU BIT_POS_7
+I2CM_INTFLAG_ERROR_Pos                  EQU 7
 
-I2CM_STATUS_BUSERR						EQU BIT_POS_0
-I2CM_STATUS_BUSERR_Pos				EQU 0
-I2CM_STATUS_ARBLOST						EQU BIT_POS_1
-I2CM_STATUS_ARBLOST_Pos				EQU 1
-I2CM_STATUS_RXNACK						EQU BIT_POS_2
-I2CM_STATUS_RXNACK_Pos				EQU 2
-I2CM_STATUS_BUSSTATE					EQU 0x0
-I2CM_STATUS_BUSSTATE_Pos			EQU 4
-I2CM_STATUS_LOWTOUT						EQU BIT_POS_6
-I2CM_STATUS_CLKHOLD						EQU BIT_POS_7
-I2CM_STATUS_CLKHOLD_Pos				EQU 7
-I2CM_STATUS_MEXTTOUT					EQU BIT_POS_8
-I2CM_STATUS_SEXTTOUT					EQU BIT_POS_9
-I2CM_STATUS_LENERR						EQU BIT_POS_10
+I2CM_STATUS_BUSERR                      EQU BIT_POS_0
+I2CM_STATUS_BUSERR_Pos                  EQU 0
+I2CM_STATUS_ARBLOST                     EQU BIT_POS_1
+I2CM_STATUS_ARBLOST_Pos                 EQU 1
+I2CM_STATUS_RXNACK                      EQU BIT_POS_2
+I2CM_STATUS_RXNACK_Pos                  EQU 2
+I2CM_STATUS_BUSSTATE                    EQU 0x0
+I2CM_STATUS_BUSSTATE_Pos                EQU 4
+I2CM_STATUS_LOWTOUT                     EQU BIT_POS_6
+I2CM_STATUS_CLKHOLD                     EQU BIT_POS_7
+I2CM_STATUS_CLKHOLD_Pos                 EQU 7
+I2CM_STATUS_MEXTTOUT                    EQU BIT_POS_8
+I2CM_STATUS_SEXTTOUT                    EQU BIT_POS_9
+I2CM_STATUS_LENERR                      EQU BIT_POS_10
 
-I2CM_SYNCBUSY_SWRST						EQU BIT_POS_0
-I2CM_SYNCBUSY_ENABLE					EQU BIT_POS_1
-I2CM_SYNCBUSY_ENABLE_Pos			EQU 1
-I2CM_SYNCBUSY_SYSOP						EQU BIT_POS_2
-I2CM_SYNCBUSY_SYSOP_Pos				EQU 2
+I2CM_SYNCBUSY_SWRST                     EQU BIT_POS_0
+I2CM_SYNCBUSY_ENABLE                    EQU BIT_POS_1
+I2CM_SYNCBUSY_ENABLE_Pos                EQU 1
+I2CM_SYNCBUSY_SYSOP                     EQU BIT_POS_2
+I2CM_SYNCBUSY_SYSOP_Pos                 EQU 2
 
-I2CM_ADDR_ADDR								EQU 0x00
-I2CM_ADDR_ADDR_Pos						EQU 0
-I2CM_ADDR_LENEN								EQU BIT_POS_13
-I2CM_ADDR_HS									EQU BIT_POS_14
-I2CM_ADDR_TENBITEN						EQU BIT_POS_15
-I2CM_ADDR_LEN									EQU 0x00
-I2CM_ADDR_LEN_Pos							EQU 16
+I2CM_ADDR_ADDR                          EQU 0x00
+I2CM_ADDR_ADDR_Pos                      EQU 0
+I2CM_ADDR_LENEN                         EQU BIT_POS_13
+I2CM_ADDR_HS                            EQU BIT_POS_14
+I2CM_ADDR_TENBITEN                      EQU BIT_POS_15
+I2CM_ADDR_LEN                           EQU 0x00
+I2CM_ADDR_LEN_Pos                       EQU 16
 
-I2CM_DATA_DATA								EQU 0x00
-I2CM_DATA_DATA_Pos						EQU 0
+I2CM_DATA_DATA                          EQU 0x00
+I2CM_DATA_DATA_Pos                      EQU 0
 
-I2CM_DBGCTRL_DBGSTOP					EQU BIT_POS_0
+I2CM_DBGCTRL_DBGSTOP                    EQU BIT_POS_0
 
 
 
@@ -1530,303 +1521,303 @@ I2CM_DBGCTRL_DBGSTOP					EQU BIT_POS_0
 
 
 ; I2CS
-I2CS_CTRLA_offset							EQU 0x00
-I2CS_CTRLB_offset							EQU 0x04
-I2CS_INTENCLR_offset					EQU 0x14
-I2CS_INTENSET_offset					EQU 0x16
-I2CS_INTFLAG_offset						EQU 0x18
-I2CS_STATUS_offset						EQU 0x1a
-I2CS_SYNCBUSY_offset					EQU 0x1c
-I2CS_ADDR_offset							EQU 0x24
-I2CS_DATA_offset							EQU 0x28
+I2CS_CTRLA_offset                       EQU 0x00
+I2CS_CTRLB_offset                       EQU 0x04
+I2CS_INTENCLR_offset                    EQU 0x14
+I2CS_INTENSET_offset                    EQU 0x16
+I2CS_INTFLAG_offset                     EQU 0x18
+I2CS_STATUS_offset                      EQU 0x1a
+I2CS_SYNCBUSY_offset                    EQU 0x1c
+I2CS_ADDR_offset                        EQU 0x24
+I2CS_DATA_offset                        EQU 0x28
 
-I2CS0_CTRLA										EQU SERCOM0 + I2CS_CTRLA_offset
-I2CS0_CTRLB										EQU SERCOM0 + I2CS_CTRLB_offset
-I2CS0_INTENCLR								EQU SERCOM0 + I2CS_INTENCLR_offset
-I2CS0_INTENSET								EQU SERCOM0 + I2CS_INTENSET_offset
-I2CS0_INTFLAG									EQU SERCOM0 + I2CS_INTFLAG_offset
-I2CS0_STATUS									EQU SERCOM0 + I2CS_STATUS_offset
-I2CS0_SYNCBUSY								EQU SERCOM0 + I2CS_SYNCBUSY_offset
-I2CS0_ADDR										EQU SERCOM0 + I2CS_ADDR_offset
-I2CS0_DATA										EQU SERCOM0 + I2CS_DATA_offset
+I2CS0_CTRLA                             EQU SERCOM0 + I2CS_CTRLA_offset
+I2CS0_CTRLB                             EQU SERCOM0 + I2CS_CTRLB_offset
+I2CS0_INTENCLR                          EQU SERCOM0 + I2CS_INTENCLR_offset
+I2CS0_INTENSET                          EQU SERCOM0 + I2CS_INTENSET_offset
+I2CS0_INTFLAG                           EQU SERCOM0 + I2CS_INTFLAG_offset
+I2CS0_STATUS                            EQU SERCOM0 + I2CS_STATUS_offset
+I2CS0_SYNCBUSY                          EQU SERCOM0 + I2CS_SYNCBUSY_offset
+I2CS0_ADDR                              EQU SERCOM0 + I2CS_ADDR_offset
+I2CS0_DATA                              EQU SERCOM0 + I2CS_DATA_offset
 
-I2CS1_CTRLA										EQU SERCOM1 + I2CS_CTRLA_offset
-I2CS1_CTRLB										EQU SERCOM1 + I2CS_CTRLB_offset
-I2CS1_INTENCLR								EQU SERCOM1 + I2CS_INTENCLR_offset
-I2CS1_INTENSET								EQU SERCOM1 + I2CS_INTENSET_offset
-I2CS1_INTFLAG									EQU SERCOM1 + I2CS_INTFLAG_offset
-I2CS1_STATUS									EQU SERCOM1 + I2CS_STATUS_offset
-I2CS1_SYNCBUSY								EQU SERCOM1 + I2CS_SYNCBUSY_offset
-I2CS1_ADDR										EQU SERCOM1 + I2CS_ADDR_offset
-I2CS1_DATA										EQU SERCOM1 + I2CS_DATA_offset
+I2CS1_CTRLA                             EQU SERCOM1 + I2CS_CTRLA_offset
+I2CS1_CTRLB                             EQU SERCOM1 + I2CS_CTRLB_offset
+I2CS1_INTENCLR                          EQU SERCOM1 + I2CS_INTENCLR_offset
+I2CS1_INTENSET                          EQU SERCOM1 + I2CS_INTENSET_offset
+I2CS1_INTFLAG                           EQU SERCOM1 + I2CS_INTFLAG_offset
+I2CS1_STATUS                            EQU SERCOM1 + I2CS_STATUS_offset
+I2CS1_SYNCBUSY                          EQU SERCOM1 + I2CS_SYNCBUSY_offset
+I2CS1_ADDR                              EQU SERCOM1 + I2CS_ADDR_offset
+I2CS1_DATA                              EQU SERCOM1 + I2CS_DATA_offset
 
-I2CS2_CTRLA										EQU SERCOM2 + I2CS_CTRLA_offset
-I2CS2_CTRLB										EQU SERCOM2 + I2CS_CTRLB_offset
-I2CS2_INTENCLR								EQU SERCOM2 + I2CS_INTENCLR_offset
-I2CS2_INTENSET								EQU SERCOM2 + I2CS_INTENSET_offset
-I2CS2_INTFLAG									EQU SERCOM2 + I2CS_INTFLAG_offset
-I2CS2_STATUS									EQU SERCOM2 + I2CS_STATUS_offset
-I2CS2_SYNCBUSY								EQU SERCOM2 + I2CS_SYNCBUSY_offset
-I2CS2_ADDR										EQU SERCOM2 + I2CS_ADDR_offset
-I2CS2_DATA										EQU SERCOM2 + I2CS_DATA_offset
+I2CS2_CTRLA                             EQU SERCOM2 + I2CS_CTRLA_offset
+I2CS2_CTRLB                             EQU SERCOM2 + I2CS_CTRLB_offset
+I2CS2_INTENCLR                          EQU SERCOM2 + I2CS_INTENCLR_offset
+I2CS2_INTENSET                          EQU SERCOM2 + I2CS_INTENSET_offset
+I2CS2_INTFLAG                           EQU SERCOM2 + I2CS_INTFLAG_offset
+I2CS2_STATUS                            EQU SERCOM2 + I2CS_STATUS_offset
+I2CS2_SYNCBUSY                          EQU SERCOM2 + I2CS_SYNCBUSY_offset
+I2CS2_ADDR                              EQU SERCOM2 + I2CS_ADDR_offset
+I2CS2_DATA                              EQU SERCOM2 + I2CS_DATA_offset
 
-I2CS3_CTRLA										EQU SERCOM3 + I2CS_CTRLA_offset
-I2CS3_CTRLB										EQU SERCOM3 + I2CS_CTRLB_offset
-I2CS3_INTENCLR								EQU SERCOM3 + I2CS_INTENCLR_offset
-I2CS3_INTENSET								EQU SERCOM3 + I2CS_INTENSET_offset
-I2CS3_INTFLAG									EQU SERCOM3 + I2CS_INTFLAG_offset
-I2CS3_STATUS									EQU SERCOM3 + I2CS_STATUS_offset
-I2CS3_SYNCBUSY								EQU SERCOM3 + I2CS_SYNCBUSY_offset
-I2CS3_ADDR										EQU SERCOM3 + I2CS_ADDR_offset
-I2CS3_DATA										EQU SERCOM3 + I2CS_DATA_offset
+I2CS3_CTRLA                             EQU SERCOM3 + I2CS_CTRLA_offset
+I2CS3_CTRLB                             EQU SERCOM3 + I2CS_CTRLB_offset
+I2CS3_INTENCLR                          EQU SERCOM3 + I2CS_INTENCLR_offset
+I2CS3_INTENSET                          EQU SERCOM3 + I2CS_INTENSET_offset
+I2CS3_INTFLAG                           EQU SERCOM3 + I2CS_INTFLAG_offset
+I2CS3_STATUS                            EQU SERCOM3 + I2CS_STATUS_offset
+I2CS3_SYNCBUSY                          EQU SERCOM3 + I2CS_SYNCBUSY_offset
+I2CS3_ADDR                              EQU SERCOM3 + I2CS_ADDR_offset
+I2CS3_DATA                              EQU SERCOM3 + I2CS_DATA_offset
 
-I2CS4_CTRLA										EQU SERCOM4 + I2CS_CTRLA_offset
-I2CS4_CTRLB										EQU SERCOM4 + I2CS_CTRLB_offset
-I2CS4_INTENCLR								EQU SERCOM4 + I2CS_INTENCLR_offset
-I2CS4_INTENSET								EQU SERCOM4 + I2CS_INTENSET_offset
-I2CS4_INTFLAG									EQU SERCOM4 + I2CS_INTFLAG_offset
-I2CS4_STATUS									EQU SERCOM4 + I2CS_STATUS_offset
-I2CS4_SYNCBUSY								EQU SERCOM4 + I2CS_SYNCBUSY_offset
-I2CS4_ADDR										EQU SERCOM4 + I2CS_ADDR_offset
-I2CS4_DATA										EQU SERCOM4 + I2CS_DATA_offset
+I2CS4_CTRLA                             EQU SERCOM4 + I2CS_CTRLA_offset
+I2CS4_CTRLB                             EQU SERCOM4 + I2CS_CTRLB_offset
+I2CS4_INTENCLR                          EQU SERCOM4 + I2CS_INTENCLR_offset
+I2CS4_INTENSET                          EQU SERCOM4 + I2CS_INTENSET_offset
+I2CS4_INTFLAG                           EQU SERCOM4 + I2CS_INTFLAG_offset
+I2CS4_STATUS                            EQU SERCOM4 + I2CS_STATUS_offset
+I2CS4_SYNCBUSY                          EQU SERCOM4 + I2CS_SYNCBUSY_offset
+I2CS4_ADDR                              EQU SERCOM4 + I2CS_ADDR_offset
+I2CS4_DATA                              EQU SERCOM4 + I2CS_DATA_offset
 
-I2CS5_CTRLA										EQU SERCOM5 + I2CS_CTRLA_offset
-I2CS5_CTRLB										EQU SERCOM5 + I2CS_CTRLB_offset
-I2CS5_INTENCLR								EQU SERCOM5 + I2CS_INTENCLR_offset
-I2CS5_INTENSET								EQU SERCOM5 + I2CS_INTENSET_offset
-I2CS5_INTFLAG									EQU SERCOM5 + I2CS_INTFLAG_offset
-I2CS5_STATUS									EQU SERCOM5 + I2CS_STATUS_offset
-I2CS5_SYNCBUSY								EQU SERCOM5 + I2CS_SYNCBUSY_offset
-I2CS5_ADDR										EQU SERCOM5 + I2CS_ADDR_offset
-I2CS5_DATA										EQU SERCOM5 + I2CS_DATA_offset
+I2CS5_CTRLA                             EQU SERCOM5 + I2CS_CTRLA_offset
+I2CS5_CTRLB                             EQU SERCOM5 + I2CS_CTRLB_offset
+I2CS5_INTENCLR                          EQU SERCOM5 + I2CS_INTENCLR_offset
+I2CS5_INTENSET                          EQU SERCOM5 + I2CS_INTENSET_offset
+I2CS5_INTFLAG                           EQU SERCOM5 + I2CS_INTFLAG_offset
+I2CS5_STATUS                            EQU SERCOM5 + I2CS_STATUS_offset
+I2CS5_SYNCBUSY                          EQU SERCOM5 + I2CS_SYNCBUSY_offset
+I2CS5_ADDR                              EQU SERCOM5 + I2CS_ADDR_offset
+I2CS5_DATA                              EQU SERCOM5 + I2CS_DATA_offset
 
 
-I2CS_CTRLA_SWRST							EQU BIT_POS_0
-I2CS_CTRLA_ENABLE							EQU BIT_POS_1
-I2CS_CTRLA_MODE_USART_EXT_CLK	EQU 0x00
-I2CS_CTRLA_MODE_USART_INT_CLK	EQU 0x04
-I2CS_CTRLA_MODE_SPI_SLAVE			EQU 0x08
-I2CS_CTRLA_MODE_SPI_MASTER		EQU 0x0c
-I2CS_CTRLA_MODE_I2C_SLAVE			EQU 0x10
-I2CS_CTRLA_MODE_I2C_MASTER		EQU 0x14
-I2CS_CTRLA_RUNSTDBY						EQU BIT_POS_7
-I2CS_CTRLA_PINOUT							EQU BIT_POS_16
-I2CS_CTRLA_SDAHOLD						EQU 0x0
-I2CS_CTRLA_SDAHOLD_Pos				EQU 20
-I2CS_CTRLA_SEXTTOEN						EQU BIT_POS_23
-I2CS_CTRLA_SPEED							EQU 0x0
-I2CS_CTRLA_SPEED_Pos					EQU 24
-I2CS_CTRLA_SCLSM							EQU BIT_POS_27
-I2CS_CTRLA_LOWTOUTEN					EQU BIT_POS_30
+I2CS_CTRLA_SWRST                        EQU BIT_POS_0
+I2CS_CTRLA_ENABLE                       EQU BIT_POS_1
+I2CS_CTRLA_MODE_USART_EXT_CLK           EQU 0x00
+I2CS_CTRLA_MODE_USART_INT_CLK           EQU 0x04
+I2CS_CTRLA_MODE_SPI_SLAVE               EQU 0x08
+I2CS_CTRLA_MODE_SPI_MASTER              EQU 0x0c
+I2CS_CTRLA_MODE_I2C_SLAVE               EQU 0x10
+I2CS_CTRLA_MODE_I2C_MASTER              EQU 0x14
+I2CS_CTRLA_RUNSTDBY                     EQU BIT_POS_7
+I2CS_CTRLA_PINOUT                       EQU BIT_POS_16
+I2CS_CTRLA_SDAHOLD                      EQU 0x0
+I2CS_CTRLA_SDAHOLD_Pos                  EQU 20
+I2CS_CTRLA_SEXTTOEN                     EQU BIT_POS_23
+I2CS_CTRLA_SPEED                        EQU 0x0
+I2CS_CTRLA_SPEED_Pos                    EQU 24
+I2CS_CTRLA_SCLSM                        EQU BIT_POS_27
+I2CS_CTRLA_LOWTOUTEN                    EQU BIT_POS_30
 
-I2CS_CTRLB_SMEN								EQU BIT_POS_8
-I2CS_CTRLB_GCMD								EQU BIT_POS_9
-I2CS_CTRLB_AACKEN							EQU BIT_POS_10
-I2CS_CTRLB_AMODE							EQU 0x0
-I2CS_CTRLB_AMODE_Pos					EQU 14
-I2CS_CTRLB_CMD								EQU 0x0
-I2CS_CTRLB_CMD_Pos						EQU 16
-I2CS_CTRLB_ACKACT							EQU BIT_POS_18
+I2CS_CTRLB_SMEN                         EQU BIT_POS_8
+I2CS_CTRLB_GCMD                         EQU BIT_POS_9
+I2CS_CTRLB_AACKEN                       EQU BIT_POS_10
+I2CS_CTRLB_AMODE                        EQU 0x0
+I2CS_CTRLB_AMODE_Pos                    EQU 14
+I2CS_CTRLB_CMD                          EQU 0x0
+I2CS_CTRLB_CMD_Pos                      EQU 16
+I2CS_CTRLB_ACKACT                       EQU BIT_POS_18
 
-I2CS_INTENCLR_PREC						EQU BIT_POS_0
-I2CS_INTENCLR_AMATCH					EQU BIT_POS_1
-I2CS_INTENCLR_DRDY						EQU BIT_POS_2
-I2CS_INTENCLR_ERROR						EQU BIT_POS_7
+I2CS_INTENCLR_PREC                      EQU BIT_POS_0
+I2CS_INTENCLR_AMATCH                    EQU BIT_POS_1
+I2CS_INTENCLR_DRDY                      EQU BIT_POS_2
+I2CS_INTENCLR_ERROR                     EQU BIT_POS_7
 
-I2CS_INTENSET_PREC						EQU BIT_POS_0
-I2CS_INTENSET_AMATCH					EQU BIT_POS_1
-I2CS_INTENSET_DRDY						EQU BIT_POS_2
-I2CS_INTENSET_ERROR						EQU BIT_POS_7
+I2CS_INTENSET_PREC                      EQU BIT_POS_0
+I2CS_INTENSET_AMATCH                    EQU BIT_POS_1
+I2CS_INTENSET_DRDY                      EQU BIT_POS_2
+I2CS_INTENSET_ERROR                     EQU BIT_POS_7
 
-I2CS_INTFLAG_PREC							EQU BIT_POS_0
-I2CS_INTFLAG_AMATCH						EQU BIT_POS_1
-I2CS_INTFLAG_DRDY							EQU BIT_POS_2
-I2CS_INTFLAG_ERROR						EQU BIT_POS_7
+I2CS_INTFLAG_PREC                       EQU BIT_POS_0
+I2CS_INTFLAG_AMATCH                     EQU BIT_POS_1
+I2CS_INTFLAG_DRDY                       EQU BIT_POS_2
+I2CS_INTFLAG_ERROR                      EQU BIT_POS_7
 
-I2CS_STATUS_BUSERR						EQU BIT_POS_0
-I2CS_STATUS_COLL							EQU BIT_POS_1
-I2CS_STATUS_RXNACK						EQU BIT_POS_2
-I2CS_STATUS_DIR								EQU BIT_POS_3
-I2CS_STATUS_SR								EQU BIT_POS_4
-I2CS_STATUS_LOWTOUT						EQU BIT_POS_6
-I2CS_STATUS_CLKHOLD						EQU BIT_POS_7
-I2CS_STATUS_SEXTTOUT					EQU BIT_POS_9
-I2CS_STATUS_HS								EQU BIT_POS_10
+I2CS_STATUS_BUSERR                      EQU BIT_POS_0
+I2CS_STATUS_COLL                        EQU BIT_POS_1
+I2CS_STATUS_RXNACK                      EQU BIT_POS_2
+I2CS_STATUS_DIR                         EQU BIT_POS_3
+I2CS_STATUS_SR                          EQU BIT_POS_4
+I2CS_STATUS_LOWTOUT                     EQU BIT_POS_6
+I2CS_STATUS_CLKHOLD                     EQU BIT_POS_7
+I2CS_STATUS_SEXTTOUT                    EQU BIT_POS_9
+I2CS_STATUS_HS                          EQU BIT_POS_10
 
-I2CS_ADDR_GENCEN							EQU BIT_POS_0
-I2CS_ADDR_ADDR								EQU 0x00
-I2CS_ADDR_ADDR_Pos						EQU 1
-I2CS_ADDR_TENBITEN						EQU BIT_POS_15
-I2CS_ADDR_ADDRMASK						EQU 0x00
-I2CS_ADDR_ADDRMASK_Pos				EQU 17
+I2CS_ADDR_GENCEN                        EQU BIT_POS_0
+I2CS_ADDR_ADDR                          EQU 0x00
+I2CS_ADDR_ADDR_Pos                      EQU 1
+I2CS_ADDR_TENBITEN                      EQU BIT_POS_15
+I2CS_ADDR_ADDRMASK                      EQU 0x00
+I2CS_ADDR_ADDRMASK_Pos                  EQU 17
 
-I2CS_DATA_DATA								EQU 0x00
-I2CS_DATA_DATA_Pos						EQU 0
+I2CS_DATA_DATA                          EQU 0x00
+I2CS_DATA_DATA_Pos                      EQU 0
 
 
 
 
 
 ; SPI
-SPI_CTRLA_offset							EQU 0x00
-SPI_CTRLB_offset							EQU 0x04
-SPI_BAUD_offset								EQU 0x0c
-SPI_INTENCLR_offset						EQU 0x14
-SPI_INTENSET_offset						EQU 0x16
-SPI_INTFLAG_offset						EQU 0x18
-SPI_STATUS_offset							EQU 0x1a
-SPI_SYNCBUSY_offset						EQU 0x1c
-SPI_ADDR_offset								EQU 0x24
-SPI_DATA_offset								EQU 0x28
-SPI_DBGCTRL_offset						EQU 0x30
+SPI_CTRLA_offset                        EQU 0x00
+SPI_CTRLB_offset                        EQU 0x04
+SPI_BAUD_offset                         EQU 0x0c
+SPI_INTENCLR_offset                     EQU 0x14
+SPI_INTENSET_offset                     EQU 0x16
+SPI_INTFLAG_offset                      EQU 0x18
+SPI_STATUS_offset                       EQU 0x1a
+SPI_SYNCBUSY_offset                     EQU 0x1c
+SPI_ADDR_offset                         EQU 0x24
+SPI_DATA_offset                         EQU 0x28
+SPI_DBGCTRL_offset                      EQU 0x30
 
-SPI0_CTRLA										EQU SERCOM0 + SPI_CTRLA_offset
-SPI0_CTRLB										EQU SERCOM0 + SPI_CTRLB_offset
-SPI0_BAUD											EQU SERCOM0 + SPI_BAUD_offset
-SPI0_INTENCLR									EQU SERCOM0 + SPI_INTENCLR_offset
-SPI0_INTENSET									EQU SERCOM0 + SPI_INTENSET_offset
-SPI0_INTFLAG									EQU SERCOM0 + SPI_INTFLAG_offset
-SPI0_STATUS										EQU SERCOM0 + SPI_STATUS_offset
-SPI0_SYNCBUSY									EQU SERCOM0 + SPI_SYNCBUSY_offset
-SPI0_ADDR											EQU SERCOM0 + SPI_ADDR_offset
-SPI0_DATA											EQU SERCOM0 + SPI_DATA_offset
-SPI0_DBGCTRL									EQU SERCOM0 + SPI_DBGCTRL_offset
+SPI0_CTRLA                              EQU SERCOM0 + SPI_CTRLA_offset
+SPI0_CTRLB                              EQU SERCOM0 + SPI_CTRLB_offset
+SPI0_BAUD                               EQU SERCOM0 + SPI_BAUD_offset
+SPI0_INTENCLR                           EQU SERCOM0 + SPI_INTENCLR_offset
+SPI0_INTENSET                           EQU SERCOM0 + SPI_INTENSET_offset
+SPI0_INTFLAG                            EQU SERCOM0 + SPI_INTFLAG_offset
+SPI0_STATUS                             EQU SERCOM0 + SPI_STATUS_offset
+SPI0_SYNCBUSY                           EQU SERCOM0 + SPI_SYNCBUSY_offset
+SPI0_ADDR                               EQU SERCOM0 + SPI_ADDR_offset
+SPI0_DATA                               EQU SERCOM0 + SPI_DATA_offset
+SPI0_DBGCTRL                            EQU SERCOM0 + SPI_DBGCTRL_offset
 
-SPI1_CTRLA										EQU SERCOM1 + SPI_CTRLA_offset
-SPI1_CTRLB										EQU SERCOM1 + SPI_CTRLB_offset
-SPI1_BAUD											EQU SERCOM1 + SPI_BAUD_offset
-SPI1_INTENCLR									EQU SERCOM1 + SPI_INTENCLR_offset
-SPI1_INTENSET									EQU SERCOM1 + SPI_INTENSET_offset
-SPI1_INTFLAG									EQU SERCOM1 + SPI_INTFLAG_offset
-SPI1_STATUS										EQU SERCOM1 + SPI_STATUS_offset
-SPI1_SYNCBUSY									EQU SERCOM1 + SPI_SYNCBUSY_offset
-SPI1_ADDR											EQU SERCOM1 + SPI_ADDR_offset
-SPI1_DATA											EQU SERCOM1 + SPI_DATA_offset
-SPI1_DBGCTRL									EQU SERCOM1 + SPI_DBGCTRL_offset
+SPI1_CTRLA                              EQU SERCOM1 + SPI_CTRLA_offset
+SPI1_CTRLB                              EQU SERCOM1 + SPI_CTRLB_offset
+SPI1_BAUD                               EQU SERCOM1 + SPI_BAUD_offset
+SPI1_INTENCLR                           EQU SERCOM1 + SPI_INTENCLR_offset
+SPI1_INTENSET                           EQU SERCOM1 + SPI_INTENSET_offset
+SPI1_INTFLAG                            EQU SERCOM1 + SPI_INTFLAG_offset
+SPI1_STATUS                             EQU SERCOM1 + SPI_STATUS_offset
+SPI1_SYNCBUSY                           EQU SERCOM1 + SPI_SYNCBUSY_offset
+SPI1_ADDR                               EQU SERCOM1 + SPI_ADDR_offset
+SPI1_DATA                               EQU SERCOM1 + SPI_DATA_offset
+SPI1_DBGCTRL                            EQU SERCOM1 + SPI_DBGCTRL_offset
 
-SPI2_CTRLA										EQU SERCOM2 + SPI_CTRLA_offset
-SPI2_CTRLB										EQU SERCOM2 + SPI_CTRLB_offset
-SPI2_BAUD											EQU SERCOM2 + SPI_BAUD_offset
-SPI2_INTENCLR									EQU SERCOM2 + SPI_INTENCLR_offset
-SPI2_INTENSET									EQU SERCOM2 + SPI_INTENSET_offset
-SPI2_INTFLAG									EQU SERCOM2 + SPI_INTFLAG_offset
-SPI2_STATUS										EQU SERCOM2 + SPI_STATUS_offset
-SPI2_SYNCBUSY									EQU SERCOM2 + SPI_SYNCBUSY_offset
-SPI2_ADDR											EQU SERCOM2 + SPI_ADDR_offset
-SPI2_DATA											EQU SERCOM2 + SPI_DATA_offset
-SPI2_DBGCTRL									EQU SERCOM2 + SPI_DBGCTRL_offset
+SPI2_CTRLA                              EQU SERCOM2 + SPI_CTRLA_offset
+SPI2_CTRLB                              EQU SERCOM2 + SPI_CTRLB_offset
+SPI2_BAUD                               EQU SERCOM2 + SPI_BAUD_offset
+SPI2_INTENCLR                           EQU SERCOM2 + SPI_INTENCLR_offset
+SPI2_INTENSET                           EQU SERCOM2 + SPI_INTENSET_offset
+SPI2_INTFLAG                            EQU SERCOM2 + SPI_INTFLAG_offset
+SPI2_STATUS                             EQU SERCOM2 + SPI_STATUS_offset
+SPI2_SYNCBUSY                           EQU SERCOM2 + SPI_SYNCBUSY_offset
+SPI2_ADDR                               EQU SERCOM2 + SPI_ADDR_offset
+SPI2_DATA                               EQU SERCOM2 + SPI_DATA_offset
+SPI2_DBGCTRL                            EQU SERCOM2 + SPI_DBGCTRL_offset
 
-SPI3_CTRLA										EQU SERCOM3 + SPI_CTRLA_offset
-SPI3_CTRLB										EQU SERCOM3 + SPI_CTRLB_offset
-SPI3_BAUD											EQU SERCOM3 + SPI_BAUD_offset
-SPI3_INTENCLR									EQU SERCOM3 + SPI_INTENCLR_offset
-SPI3_INTENSET									EQU SERCOM3 + SPI_INTENSET_offset
-SPI3_INTFLAG									EQU SERCOM3 + SPI_INTFLAG_offset
-SPI3_STATUS										EQU SERCOM3 + SPI_STATUS_offset
-SPI3_SYNCBUSY									EQU SERCOM3 + SPI_SYNCBUSY_offset
-SPI3_ADDR											EQU SERCOM3 + SPI_ADDR_offset
-SPI3_DATA											EQU SERCOM3 + SPI_DATA_offset
-SPI3_DBGCTRL									EQU SERCOM3 + SPI_DBGCTRL_offset
+SPI3_CTRLA                              EQU SERCOM3 + SPI_CTRLA_offset
+SPI3_CTRLB                              EQU SERCOM3 + SPI_CTRLB_offset
+SPI3_BAUD                               EQU SERCOM3 + SPI_BAUD_offset
+SPI3_INTENCLR                           EQU SERCOM3 + SPI_INTENCLR_offset
+SPI3_INTENSET                           EQU SERCOM3 + SPI_INTENSET_offset
+SPI3_INTFLAG                            EQU SERCOM3 + SPI_INTFLAG_offset
+SPI3_STATUS                             EQU SERCOM3 + SPI_STATUS_offset
+SPI3_SYNCBUSY                           EQU SERCOM3 + SPI_SYNCBUSY_offset
+SPI3_ADDR                               EQU SERCOM3 + SPI_ADDR_offset
+SPI3_DATA                               EQU SERCOM3 + SPI_DATA_offset
+SPI3_DBGCTRL                            EQU SERCOM3 + SPI_DBGCTRL_offset
 
-SPI4_CTRLA										EQU SERCOM4 + SPI_CTRLA_offset
-SPI4_CTRLB										EQU SERCOM4 + SPI_CTRLB_offset
-SPI4_BAUD											EQU SERCOM4 + SPI_BAUD_offset
-SPI4_INTENCLR									EQU SERCOM4 + SPI_INTENCLR_offset
-SPI4_INTENSET									EQU SERCOM4 + SPI_INTENSET_offset
-SPI4_INTFLAG									EQU SERCOM4 + SPI_INTFLAG_offset
-SPI4_STATUS										EQU SERCOM4 + SPI_STATUS_offset
-SPI4_SYNCBUSY									EQU SERCOM4 + SPI_SYNCBUSY_offset
-SPI4_ADDR											EQU SERCOM4 + SPI_ADDR_offset
-SPI4_DATA											EQU SERCOM4 + SPI_DATA_offset
-SPI4_DBGCTRL									EQU SERCOM4 + SPI_DBGCTRL_offset
+SPI4_CTRLA                              EQU SERCOM4 + SPI_CTRLA_offset
+SPI4_CTRLB                              EQU SERCOM4 + SPI_CTRLB_offset
+SPI4_BAUD                               EQU SERCOM4 + SPI_BAUD_offset
+SPI4_INTENCLR                           EQU SERCOM4 + SPI_INTENCLR_offset
+SPI4_INTENSET                           EQU SERCOM4 + SPI_INTENSET_offset
+SPI4_INTFLAG                            EQU SERCOM4 + SPI_INTFLAG_offset
+SPI4_STATUS                             EQU SERCOM4 + SPI_STATUS_offset
+SPI4_SYNCBUSY                           EQU SERCOM4 + SPI_SYNCBUSY_offset
+SPI4_ADDR                               EQU SERCOM4 + SPI_ADDR_offset
+SPI4_DATA                               EQU SERCOM4 + SPI_DATA_offset
+SPI4_DBGCTRL                            EQU SERCOM4 + SPI_DBGCTRL_offset
 
-SPI5_CTRLA										EQU SERCOM5 + SPI_CTRLA_offset
-SPI5_CTRLB										EQU SERCOM5 + SPI_CTRLB_offset
-SPI5_BAUD											EQU SERCOM5 + SPI_BAUD_offset
-SPI5_INTENCLR									EQU SERCOM5 + SPI_INTENCLR_offset
-SPI5_INTENSET									EQU SERCOM5 + SPI_INTENSET_offset
-SPI5_INTFLAG									EQU SERCOM5 + SPI_INTFLAG_offset
-SPI5_STATUS										EQU SERCOM5 + SPI_STATUS_offset
-SPI5_SYNCBUSY									EQU SERCOM5 + SPI_SYNCBUSY_offset
-SPI5_ADDR											EQU SERCOM5 + SPI_ADDR_offset
-SPI5_DATA											EQU SERCOM5 + SPI_DATA_offset
-SPI5_DBGCTRL									EQU SERCOM5 + SPI_DBGCTRL_offset
+SPI5_CTRLA                              EQU SERCOM5 + SPI_CTRLA_offset
+SPI5_CTRLB                              EQU SERCOM5 + SPI_CTRLB_offset
+SPI5_BAUD                               EQU SERCOM5 + SPI_BAUD_offset
+SPI5_INTENCLR                           EQU SERCOM5 + SPI_INTENCLR_offset
+SPI5_INTENSET                           EQU SERCOM5 + SPI_INTENSET_offset
+SPI5_INTFLAG                            EQU SERCOM5 + SPI_INTFLAG_offset
+SPI5_STATUS                             EQU SERCOM5 + SPI_STATUS_offset
+SPI5_SYNCBUSY                           EQU SERCOM5 + SPI_SYNCBUSY_offset
+SPI5_ADDR                               EQU SERCOM5 + SPI_ADDR_offset
+SPI5_DATA                               EQU SERCOM5 + SPI_DATA_offset
+SPI5_DBGCTRL                            EQU SERCOM5 + SPI_DBGCTRL_offset
 
 
-SPI_CTRLA_SWRST								EQU BIT_POS_0
-SPI_CTRLA_ENABLE							EQU BIT_POS_1
-SPI_CTRLA_MODE_USART_EXT_CLK	EQU 0x00
-SPI_CTRLA_MODE_USART_INT_CLK	EQU 0x04
-SPI_CTRLA_MODE_SPI_SLAVE			EQU 0x08
-SPI_CTRLA_MODE_SPI_MASTER			EQU 0x0c
-SPI_CTRLA_MODE_I2C_SLAVE			EQU 0x10
-SPI_CTRLA_MODE_I2C_MASTER			EQU 0x14
-SPI_CTRLA_RUNSTDBY						EQU BIT_POS_7
-SPI_CTRLA_IBON								EQU BIT_POS_8
-SPI_CTRLA_DOPO								EQU 0x0
-SPI_CTRLA_DOPO_Pos						EQU 16
-SPI_CTRLA_DIPO								EQU 0x0
-SPI_CTRLA_DIPO_Pos						EQU 20
-SPI_CTRLA_FORM								EQU 0x0
-SPI_CTRLA_FORM_Pos						EQU 24
-SPI_CTRLA_CPHA								EQU BIT_POS_28
-SPI_CTRLA_CPOL								EQU BIT_POS_29
-SPI_CTRLA_DORD								EQU BIT_POS_30
+SPI_CTRLA_SWRST                         EQU BIT_POS_0
+SPI_CTRLA_ENABLE                        EQU BIT_POS_1
+SPI_CTRLA_MODE_USART_EXT_CLK            EQU 0x00
+SPI_CTRLA_MODE_USART_INT_CLK            EQU 0x04
+SPI_CTRLA_MODE_SPI_SLAVE                EQU 0x08
+SPI_CTRLA_MODE_SPI_MASTER               EQU 0x0c
+SPI_CTRLA_MODE_I2C_SLAVE                EQU 0x10
+SPI_CTRLA_MODE_I2C_MASTER               EQU 0x14
+SPI_CTRLA_RUNSTDBY                      EQU BIT_POS_7
+SPI_CTRLA_IBON                          EQU BIT_POS_8
+SPI_CTRLA_DOPO                          EQU 0x0
+SPI_CTRLA_DOPO_Pos                      EQU 16
+SPI_CTRLA_DIPO                          EQU 0x0
+SPI_CTRLA_DIPO_Pos                      EQU 20
+SPI_CTRLA_FORM                          EQU 0x0
+SPI_CTRLA_FORM_Pos                      EQU 24
+SPI_CTRLA_CPHA                          EQU BIT_POS_28
+SPI_CTRLA_CPOL                          EQU BIT_POS_29
+SPI_CTRLA_DORD                          EQU BIT_POS_30
 
-SPI_CTRLB_CHSIZE							EQU 0x0
-SPI_CTRLB_CHSIZE_Pos					EQU 0
-SPI_CTRLB_PLOADEN							EQU BIT_POS_6
-SPI_CTRLB_SSDE								EQU BIT_POS_9
-SPI_CTRLB_MSSEN								EQU BIT_POS_13
-SPI_CTRLB_AMODE								EQU 0x0
-SPI_CTRLB_AMODE_Pos						EQU 14
-SPI_CTRLB_RXEN								EQU BIT_POS_17
+SPI_CTRLB_CHSIZE                        EQU 0x0
+SPI_CTRLB_CHSIZE_Pos                    EQU 0
+SPI_CTRLB_PLOADEN                       EQU BIT_POS_6
+SPI_CTRLB_SSDE                          EQU BIT_POS_9
+SPI_CTRLB_MSSEN                         EQU BIT_POS_13
+SPI_CTRLB_AMODE                         EQU 0x0
+SPI_CTRLB_AMODE_Pos                     EQU 14
+SPI_CTRLB_RXEN                          EQU BIT_POS_17
 
-SPI_BAUD_BAUD									EQU 0x00
-SPI_BAUD_BAUD_Pos							EQU 0
+SPI_BAUD_BAUD                           EQU 0x00
+SPI_BAUD_BAUD_Pos                       EQU 0
 
-SPI_INTENCLR_DRE							EQU BIT_POS_0
-SPI_INTENCLR_TXC							EQU BIT_POS_1
-SPI_INTENCLR_RXC							EQU BIT_POS_2
-SPI_INTENCLR_SSL							EQU BIT_POS_3
-SPI_INTENCLR_ERROR						EQU BIT_POS_7
+SPI_INTENCLR_DRE                        EQU BIT_POS_0
+SPI_INTENCLR_TXC                        EQU BIT_POS_1
+SPI_INTENCLR_RXC                        EQU BIT_POS_2
+SPI_INTENCLR_SSL                        EQU BIT_POS_3
+SPI_INTENCLR_ERROR                      EQU BIT_POS_7
 
-SPI_INTENSET_DRE							EQU BIT_POS_0
-SPI_INTENSET_TXC							EQU BIT_POS_1
-SPI_INTENSET_RXC							EQU BIT_POS_2
-SPI_INTENSET_SSL							EQU BIT_POS_3
-SPI_INTENSET_ERROR						EQU BIT_POS_7
+SPI_INTENSET_DRE                        EQU BIT_POS_0
+SPI_INTENSET_TXC                        EQU BIT_POS_1
+SPI_INTENSET_RXC                        EQU BIT_POS_2
+SPI_INTENSET_SSL                        EQU BIT_POS_3
+SPI_INTENSET_ERROR                      EQU BIT_POS_7
 
-SPI_INTFLAG_DRE								EQU BIT_POS_0
-SPI_INTFLAG_DRE_Pos						EQU 0
-SPI_INTFLAG_TXC								EQU BIT_POS_1
-SPI_INTFLAG_TXC_Pos						EQU 1
-SPI_INTFLAG_RXC								EQU BIT_POS_2
-SPI_INTFLAG_RXC_Pos						EQU 2
-SPI_INTFLAG_SSL								EQU BIT_POS_3
-SPI_INTFLAG_SSL_Pos						EQU 3
-SPI_INTFLAG_ERROR							EQU BIT_POS_7
-SPI_INTFLAG_ERROR_Pos					EQU 7
+SPI_INTFLAG_DRE                         EQU BIT_POS_0
+SPI_INTFLAG_DRE_Pos                     EQU 0
+SPI_INTFLAG_TXC                         EQU BIT_POS_1
+SPI_INTFLAG_TXC_Pos                     EQU 1
+SPI_INTFLAG_RXC                         EQU BIT_POS_2
+SPI_INTFLAG_RXC_Pos                     EQU 2
+SPI_INTFLAG_SSL                         EQU BIT_POS_3
+SPI_INTFLAG_SSL_Pos                     EQU 3
+SPI_INTFLAG_ERROR                       EQU BIT_POS_7
+SPI_INTFLAG_ERROR_Pos                   EQU 7
 
-SPI_STATUS_BUFOVF							EQU BIT_POS_2
-SPI_STATUS_BUFOVF_Pos					EQU 2
+SPI_STATUS_BUFOVF                       EQU BIT_POS_2
+SPI_STATUS_BUFOVF_Pos                   EQU 2
 
-SPI_SYNCBUSY_SWRST						EQU BIT_POS_0
-SPI_SYNCBUSY_SWRST_Pos				EQU 0
-SPI_SYNCBUSY_ENABLE						EQU BIT_POS_1
-SPI_SYNCBUSY_ENABLE_Pos				EQU 1
-SPI_SYNCBUSY_CTRLB						EQU BIT_POS_2
-SPI_SYNCBUSY_CTRLB_Pos				EQU 2
+SPI_SYNCBUSY_SWRST                      EQU BIT_POS_0
+SPI_SYNCBUSY_SWRST_Pos                  EQU 0
+SPI_SYNCBUSY_ENABLE                     EQU BIT_POS_1
+SPI_SYNCBUSY_ENABLE_Pos                 EQU 1
+SPI_SYNCBUSY_CTRLB                      EQU BIT_POS_2
+SPI_SYNCBUSY_CTRLB_Pos                  EQU 2
 
-SPI_ADDR_ADDR									EQU 0x00
-SPI_ADDR_ADDR_Pos							EQU 0
-SPI_ADDR_ADDRMASK							EQU 0x00
-SPI_ADDR_ADDRMASK_Pos					EQU 16
+SPI_ADDR_ADDR                           EQU 0x00
+SPI_ADDR_ADDR_Pos                       EQU 0
+SPI_ADDR_ADDRMASK                       EQU 0x00
+SPI_ADDR_ADDRMASK_Pos                   EQU 16
 
-SPI_DATA_DATA									EQU 0x00
-SPI_DATA_DATA_Pos							EQU 0
+SPI_DATA_DATA                           EQU 0x00
+SPI_DATA_DATA_Pos                       EQU 0
 
-SPI_DBGCTRL_DBGSTOP						EQU BIT_POS_0
+SPI_DBGCTRL_DBGSTOP                     EQU BIT_POS_0
 
 
 
@@ -1836,197 +1827,196 @@ SPI_DBGCTRL_DBGSTOP						EQU BIT_POS_0
 
 
 ; USART
-USART_CTRLA_offset							EQU 0x00
-USART_CTRLB_offset							EQU 0x04
-USART_BAUD_offset								EQU 0x0c
-USART_BAUD_FRAC_MODE_offset			EQU 0x0c
-USART_BAUD_FRACFP_MODE_offset		EQU 0x0c
-USART_BAUD_USARTFP_MODE_offset	EQU 0x0c
-USART_RXPL_offset								EQU 0x0e
-USART_INTENCLR_offset						EQU 0x14
-USART_INTENSET_offset						EQU 0x16
-USART_INTFLAG_offset						EQU 0x18
-USART_STATUS_offset							EQU 0x1a
-USART_SYNCBUSY_offset						EQU 0x1c
-USART_DATA_offset								EQU 0x28
-USART_DBGCTRL_offset						EQU 0x30
+USART_CTRLA_offset                      EQU 0x00
+USART_CTRLB_offset                      EQU 0x04
+USART_BAUD_offset                       EQU 0x0c
+USART_BAUD_FRAC_MODE_offset             EQU 0x0c
+USART_BAUD_FRACFP_MODE_offset           EQU 0x0c
+USART_BAUD_USARTFP_MODE_offset          EQU 0x0c
+USART_RXPL_offset                       EQU 0x0e
+USART_INTENCLR_offset                   EQU 0x14
+USART_INTENSET_offset                   EQU 0x16
+USART_INTFLAG_offset                    EQU 0x18
+USART_STATUS_offset                     EQU 0x1a
+USART_SYNCBUSY_offset                   EQU 0x1c
+USART_DATA_offset                       EQU 0x28
+USART_DBGCTRL_offset                    EQU 0x30
 
-USART0_CTRLA										EQU SERCOM0 + USART_CTRLA_offset
-USART0_CTRLB										EQU SERCOM0 + USART_CTRLB_offset
-USART0_BAUD											EQU SERCOM0 + USART_BAUD_offset
-USART0_BAUD_FRAC_MODE						EQU SERCOM0 + USART_BAUD_FRAC_MODE_offset
-USART0_BAUD_FRACFP_MODE					EQU SERCOM0 + USART_BAUD_FRACFP_MODE_offset
-USART0_BAUD_USARTFP_MODE				EQU SERCOM0 + USART_BAUD_USARTFP_MODE_offset
-USART0_RXPL											EQU SERCOM0 + USART_RXPL_offset
-USART0_INTENCLR									EQU SERCOM0 + USART_INTENCLR_offset
-USART0_INTENSET									EQU SERCOM0 + USART_INTENSET_offset
-USART0_INTFLAG									EQU SERCOM0 + USART_INTFLAG_offset
-USART0_STATUS										EQU SERCOM0 + USART_STATUS_offset
-USART0_SYNCBUSY									EQU SERCOM0 + USART_SYNCBUSY_offset
-USART0_DATA											EQU SERCOM0 + USART_DATA_offset
-USART0_DBGCTRL									EQU SERCOM0 + USART_DBGCTRL_offset
+USART0_CTRLA                            EQU SERCOM0 + USART_CTRLA_offset
+USART0_CTRLB                            EQU SERCOM0 + USART_CTRLB_offset
+USART0_BAUD                             EQU SERCOM0 + USART_BAUD_offset
+USART0_BAUD_FRAC_MODE                   EQU SERCOM0 + USART_BAUD_FRAC_MODE_offset
+USART0_BAUD_FRACFP_MODE                 EQU SERCOM0 + USART_BAUD_FRACFP_MODE_offset
+USART0_BAUD_USARTFP_MODE                EQU SERCOM0 + USART_BAUD_USARTFP_MODE_offset
+USART0_RXPL                             EQU SERCOM0 + USART_RXPL_offset
+USART0_INTENCLR                         EQU SERCOM0 + USART_INTENCLR_offset
+USART0_INTENSET                         EQU SERCOM0 + USART_INTENSET_offset
+USART0_INTFLAG                          EQU SERCOM0 + USART_INTFLAG_offset
+USART0_STATUS                           EQU SERCOM0 + USART_STATUS_offset
+USART0_SYNCBUSY                         EQU SERCOM0 + USART_SYNCBUSY_offset
+USART0_DATA                             EQU SERCOM0 + USART_DATA_offset
+USART0_DBGCTRL                          EQU SERCOM0 + USART_DBGCTRL_offset
 
-USART1_CTRLA										EQU SERCOM1 + USART_CTRLA_offset
-USART1_CTRLB										EQU SERCOM1 + USART_CTRLB_offset
-USART1_BAUD											EQU SERCOM1 + USART_BAUD_offset
-USART1_BAUD_FRAC_MODE						EQU SERCOM1 + USART_BAUD_FRAC_MODE_offset
-USART1_BAUD_FRACFP_MODE					EQU SERCOM1 + USART_BAUD_FRACFP_MODE_offset
-USART1_BAUD_USARTFP_MODE				EQU SERCOM1 + USART_BAUD_USARTFP_MODE_offset
-USART1_RXPL											EQU SERCOM1 + USART_RXPL_offset
-USART1_INTENCLR									EQU SERCOM1 + USART_INTENCLR_offset
-USART1_INTENSET									EQU SERCOM1 + USART_INTENSET_offset
-USART1_INTFLAG									EQU SERCOM1 + USART_INTFLAG_offset
-USART1_STATUS										EQU SERCOM1 + USART_STATUS_offset
-USART1_SYNCBUSY									EQU SERCOM1 + USART_SYNCBUSY_offset
-USART1_DATA											EQU SERCOM1 + USART_DATA_offset
-USART1_DBGCTRL									EQU SERCOM1 + USART_DBGCTRL_offset
+USART1_CTRLA                            EQU SERCOM1 + USART_CTRLA_offset
+USART1_CTRLB                            EQU SERCOM1 + USART_CTRLB_offset
+USART1_BAUD                             EQU SERCOM1 + USART_BAUD_offset
+USART1_BAUD_FRAC_MODE                   EQU SERCOM1 + USART_BAUD_FRAC_MODE_offset
+USART1_BAUD_FRACFP_MODE                 EQU SERCOM1 + USART_BAUD_FRACFP_MODE_offset
+USART1_BAUD_USARTFP_MODE                EQU SERCOM1 + USART_BAUD_USARTFP_MODE_offset
+USART1_RXPL                             EQU SERCOM1 + USART_RXPL_offset
+USART1_INTENCLR                         EQU SERCOM1 + USART_INTENCLR_offset
+USART1_INTENSET                         EQU SERCOM1 + USART_INTENSET_offset
+USART1_INTFLAG                          EQU SERCOM1 + USART_INTFLAG_offset
+USART1_STATUS                           EQU SERCOM1 + USART_STATUS_offset
+USART1_SYNCBUSY                         EQU SERCOM1 + USART_SYNCBUSY_offset
+USART1_DATA                             EQU SERCOM1 + USART_DATA_offset
+USART1_DBGCTRL                          EQU SERCOM1 + USART_DBGCTRL_offset
 
-USART2_CTRLA										EQU SERCOM2 + USART_CTRLA_offset
-USART2_CTRLB										EQU SERCOM2 + USART_CTRLB_offset
-USART2_BAUD											EQU SERCOM2 + USART_BAUD_offset
-USART2_BAUD_FRAC_MODE						EQU SERCOM2 + USART_BAUD_FRAC_MODE_offset
-USART2_BAUD_FRACFP_MODE					EQU SERCOM2 + USART_BAUD_FRACFP_MODE_offset
-USART2_BAUD_USARTFP_MODE				EQU SERCOM2 + USART_BAUD_USARTFP_MODE_offset
-USART2_RXPL											EQU SERCOM2 + USART_RXPL_offset
-USART2_INTENCLR									EQU SERCOM2 + USART_INTENCLR_offset
-USART2_INTENSET									EQU SERCOM2 + USART_INTENSET_offset
-USART2_INTFLAG									EQU SERCOM2 + USART_INTFLAG_offset
-USART2_STATUS										EQU SERCOM2 + USART_STATUS_offset
-USART2_SYNCBUSY									EQU SERCOM2 + USART_SYNCBUSY_offset
-USART2_DATA											EQU SERCOM2 + USART_DATA_offset
-USART2_DBGCTRL									EQU SERCOM2 + USART_DBGCTRL_offset
+USART2_CTRLA                            EQU SERCOM2 + USART_CTRLA_offset
+USART2_CTRLB                            EQU SERCOM2 + USART_CTRLB_offset
+USART2_BAUD                             EQU SERCOM2 + USART_BAUD_offset
+USART2_BAUD_FRAC_MODE                   EQU SERCOM2 + USART_BAUD_FRAC_MODE_offset
+USART2_BAUD_FRACFP_MODE                 EQU SERCOM2 + USART_BAUD_FRACFP_MODE_offset
+USART2_BAUD_USARTFP_MODE                EQU SERCOM2 + USART_BAUD_USARTFP_MODE_offset
+USART2_RXPL                             EQU SERCOM2 + USART_RXPL_offset
+USART2_INTENCLR                         EQU SERCOM2 + USART_INTENCLR_offset
+USART2_INTENSET                         EQU SERCOM2 + USART_INTENSET_offset
+USART2_INTFLAG                          EQU SERCOM2 + USART_INTFLAG_offset
+USART2_STATUS                           EQU SERCOM2 + USART_STATUS_offset
+USART2_SYNCBUSY                         EQU SERCOM2 + USART_SYNCBUSY_offset
+USART2_DATA                             EQU SERCOM2 + USART_DATA_offset
+USART2_DBGCTRL                          EQU SERCOM2 + USART_DBGCTRL_offset
 
-USART3_CTRLA										EQU SERCOM3 + USART_CTRLA_offset
-USART3_CTRLB										EQU SERCOM3 + USART_CTRLB_offset
-USART3_BAUD											EQU SERCOM3 + USART_BAUD_offset
-USART3_BAUD_FRAC_MODE						EQU SERCOM3 + USART_BAUD_FRAC_MODE_offset
-USART3_BAUD_FRACFP_MODE					EQU SERCOM3 + USART_BAUD_FRACFP_MODE_offset
-USART3_BAUD_USARTFP_MODE				EQU SERCOM3 + USART_BAUD_USARTFP_MODE_offset
-USART3_RXPL											EQU SERCOM3 + USART_RXPL_offset
-USART3_INTENCLR									EQU SERCOM3 + USART_INTENCLR_offset
-USART3_INTENSET									EQU SERCOM3 + USART_INTENSET_offset
-USART3_INTFLAG									EQU SERCOM3 + USART_INTFLAG_offset
-USART3_STATUS										EQU SERCOM3 + USART_STATUS_offset
-USART3_SYNCBUSY									EQU SERCOM3 + USART_SYNCBUSY_offset
-USART3_DATA											EQU SERCOM3 + USART_DATA_offset
-USART3_DBGCTRL									EQU SERCOM3 + USART_DBGCTRL_offset
+USART3_CTRLA                            EQU SERCOM3 + USART_CTRLA_offset
+USART3_CTRLB                            EQU SERCOM3 + USART_CTRLB_offset
+USART3_BAUD                             EQU SERCOM3 + USART_BAUD_offset
+USART3_BAUD_FRAC_MODE                   EQU SERCOM3 + USART_BAUD_FRAC_MODE_offset
+USART3_BAUD_FRACFP_MODE                 EQU SERCOM3 + USART_BAUD_FRACFP_MODE_offset
+USART3_BAUD_USARTFP_MODE                EQU SERCOM3 + USART_BAUD_USARTFP_MODE_offset
+USART3_RXPL                             EQU SERCOM3 + USART_RXPL_offset
+USART3_INTENCLR                         EQU SERCOM3 + USART_INTENCLR_offset
+USART3_INTENSET                         EQU SERCOM3 + USART_INTENSET_offset
+USART3_INTFLAG                          EQU SERCOM3 + USART_INTFLAG_offset
+USART3_STATUS                           EQU SERCOM3 + USART_STATUS_offset
+USART3_SYNCBUSY                         EQU SERCOM3 + USART_SYNCBUSY_offset
+USART3_DATA                             EQU SERCOM3 + USART_DATA_offset
+USART3_DBGCTRL                          EQU SERCOM3 + USART_DBGCTRL_offset
 
-USART4_CTRLA										EQU SERCOM4 + USART_CTRLA_offset
-USART4_CTRLB										EQU SERCOM4 + USART_CTRLB_offset
-USART4_BAUD											EQU SERCOM4 + USART_BAUD_offset
-USART4_BAUD_FRAC_MODE						EQU SERCOM4 + USART_BAUD_FRAC_MODE_offset
-USART4_BAUD_FRACFP_MODE					EQU SERCOM4 + USART_BAUD_FRACFP_MODE_offset
-USART4_BAUD_USARTFP_MODE				EQU SERCOM4 + USART_BAUD_USARTFP_MODE_offset
-USART4_RXPL											EQU SERCOM4 + USART_RXPL_offset
-USART4_INTENCLR									EQU SERCOM4 + USART_INTENCLR_offset
-USART4_INTENSET									EQU SERCOM4 + USART_INTENSET_offset
-USART4_INTFLAG									EQU SERCOM4 + USART_INTFLAG_offset
-USART4_STATUS										EQU SERCOM4 + USART_STATUS_offset
-USART4_SYNCBUSY									EQU SERCOM4 + USART_SYNCBUSY_offset
-USART4_DATA											EQU SERCOM4 + USART_DATA_offset
-USART4_DBGCTRL									EQU SERCOM4 + USART_DBGCTRL_offset
+USART4_CTRLA                            EQU SERCOM4 + USART_CTRLA_offset
+USART4_CTRLB                            EQU SERCOM4 + USART_CTRLB_offset
+USART4_BAUD                             EQU SERCOM4 + USART_BAUD_offset
+USART4_BAUD_FRAC_MODE                   EQU SERCOM4 + USART_BAUD_FRAC_MODE_offset
+USART4_BAUD_FRACFP_MODE                 EQU SERCOM4 + USART_BAUD_FRACFP_MODE_offset
+USART4_BAUD_USARTFP_MODE                EQU SERCOM4 + USART_BAUD_USARTFP_MODE_offset
+USART4_RXPL                             EQU SERCOM4 + USART_RXPL_offset
+USART4_INTENCLR                         EQU SERCOM4 + USART_INTENCLR_offset
+USART4_INTENSET                         EQU SERCOM4 + USART_INTENSET_offset
+USART4_INTFLAG                          EQU SERCOM4 + USART_INTFLAG_offset
+USART4_STATUS                           EQU SERCOM4 + USART_STATUS_offset
+USART4_SYNCBUSY                         EQU SERCOM4 + USART_SYNCBUSY_offset
+USART4_DATA                             EQU SERCOM4 + USART_DATA_offset
+USART4_DBGCTRL                          EQU SERCOM4 + USART_DBGCTRL_offset
 
-USART5_CTRLA										EQU SERCOM5 + USART_CTRLA_offset
-USART5_CTRLB										EQU SERCOM5 + USART_CTRLB_offset
-USART5_BAUD											EQU SERCOM5 + USART_BAUD_offset
-USART5_BAUD_FRAC_MODE						EQU SERCOM5 + USART_BAUD_FRAC_MODE_offset
-USART5_BAUD_FRACFP_MODE					EQU SERCOM5 + USART_BAUD_FRACFP_MODE_offset
-USART5_BAUD_USARTFP_MODE				EQU SERCOM5 + USART_BAUD_USARTFP_MODE_offset
-USART5_RXPL											EQU SERCOM5 + USART_RXPL_offset
-USART5_INTENCLR									EQU SERCOM5 + USART_INTENCLR_offset
-USART5_INTENSET									EQU SERCOM5 + USART_INTENSET_offset
-USART5_INTFLAG									EQU SERCOM5 + USART_INTFLAG_offset
-USART5_STATUS										EQU SERCOM5 + USART_STATUS_offset
-USART5_SYNCBUSY									EQU SERCOM5 + USART_SYNCBUSY_offset
-USART5_DATA											EQU SERCOM5 + USART_DATA_offset
-USART5_DBGCTRL									EQU SERCOM5 + USART_DBGCTRL_offset
-
-
-USART_CTRLA_SWRST								EQU BIT_POS_0
-USART_CTRLA_ENABLE							EQU BIT_POS_1
-USART_CTRLA_MODE_USART_EXT_CLK	EQU 0x00
-USART_CTRLA_MODE_USART_INT_CLK	EQU 0x04
-USART_CTRLA_MODE_SPI_SLAVE			EQU 0x08
-USART_CTRLA_MODE_SPI_MASTER			EQU 0x0c
-USART_CTRLA_MODE_I2C_SLAVE			EQU 0x10
-USART_CTRLA_MODE_I2C_MASTER			EQU 0x14
-USART_CTRLA_RUNSTDBY						EQU BIT_POS_7
-USART_CTRLA_IBON								EQU BIT_POS_8
-USART_CTRLA_SAMPR								EQU 0x0
-USART_CTRLA_SAMPR_Pos						EQU 13
-USART_CTRLA_TXPO								EQU 0x0
-USART_CTRLA_TXPO_Pos						EQU 16
-USART_CTRLA_RXPO								EQU 0x0
-USART_CTRLA_RXPO_Pos						EQU 20
-USART_CTRLA_SAMPA								EQU 0x0
-USART_CTRLA_SAMPA_Pos						EQU 22
-USART_CTRLA_FORM								EQU 0x0
-USART_CTRLA_FORM_Pos						EQU 24
-USART_CTRLA_CMODE								EQU BIT_POS_28
-USART_CTRLA_CPOL								EQU BIT_POS_29
-USART_CTRLA_DORD								EQU BIT_POS_30
-
-USART_BAUD_BAUD									EQU 0x00
-USART_BAUD_BAUD_Pos							EQU 0
-
-USART_BAUD_FRAC_MODE_BAUD				EQU 0x00
-USART_BAUD_FRAC_MODE_BAUD_Pos		EQU 0
-USART_BAUD_FRAC_MODE_FP					EQU 0x0
-USART_BAUD_FRAC_MODE_FP_Pos			EQU 13
-
-USART_BAUD_FRACFP_MODE_BAUD			EQU 0x00
-USART_BAUD_FRACFP_MODE_BAUD_Pos	EQU 0
-USART_BAUD_FRACFP_MODE_FP				EQU 0x0
-USART_BAUD_FRACFP_MODE_FP_Pos		EQU 13
-
-USART_BAUD_USARTFP_MODE_BAUD			EQU 0x00
-USART_BAUD_USARTFP_MODE_BAUD_Pos	EQU 0
-
-USART_RXPL_RXPL									EQU 0x00
-USART_RXPL_RXPL_Pos							EQU 0
-
-USART_INTENCLR_DRE							EQU BIT_POS_0
-USART_INTENCLR_TXC							EQU BIT_POS_1
-USART_INTENCLR_RXC							EQU BIT_POS_2
-USART_INTENCLR_RXS							EQU BIT_POS_3
-USART_INTENCLR_CTSIC						EQU BIT_POS_4
-USART_INTENCLR_RXBRK						EQU BIT_POS_5
-USART_INTENCLR_ERROR						EQU BIT_POS_7
-
-USART_INTENSET_DRE							EQU BIT_POS_0
-USART_INTENSET_TXC							EQU BIT_POS_1
-USART_INTENSET_RXC							EQU BIT_POS_2
-USART_INTENSET_RXS							EQU BIT_POS_3
-USART_INTENSET_CTSIC						EQU BIT_POS_4
-USART_INTENSET_RXBRK						EQU BIT_POS_5
-USART_INTENSET_ERROR						EQU BIT_POS_7
-
-USART_INTFLAG_DRE								EQU BIT_POS_0
-USART_INTFLAG_TXC								EQU BIT_POS_1
-USART_INTFLAG_RXC								EQU BIT_POS_2
-USART_INTFLAG_RXS								EQU BIT_POS_3
-USART_INTFLAG_CTSIC							EQU BIT_POS_4
-USART_INTFLAG_RXBRK							EQU BIT_POS_5
-USART_INTFLAG_ERROR							EQU BIT_POS_7
-
-USART_STATUS_PERR								EQU BIT_POS_0
-USART_STATUS_FERR								EQU BIT_POS_1
-USART_STATUS_BUFOVF							EQU BIT_POS_2
-USART_STATUS_CTS								EQU BIT_POS_3
-USART_STATUS_ISF								EQU BIT_POS_4
-USART_STATUS_COLL								EQU BIT_POS_5
-
-USART_SYNCBUSY_SWRST						EQU BIT_POS_0
-USART_SYNCBUSY_ENABLE						EQU BIT_POS_1
-USART_SYNCBUSY_CTRLB						EQU BIT_POS_2
-
-USART_DATA_DATA									EQU 0x00
-USART_DATA_DATA_Pos							EQU 0
-
-USART_DBGCTRL_DBGSTOP						EQU BIT_POS_0
+USART5_CTRLA                            EQU SERCOM5 + USART_CTRLA_offset
+USART5_CTRLB                            EQU SERCOM5 + USART_CTRLB_offset
+USART5_BAUD                             EQU SERCOM5 + USART_BAUD_offset
+USART5_BAUD_FRAC_MODE                   EQU SERCOM5 + USART_BAUD_FRAC_MODE_offset
+USART5_BAUD_FRACFP_MODE                 EQU SERCOM5 + USART_BAUD_FRACFP_MODE_offset
+USART5_BAUD_USARTFP_MODE                EQU SERCOM5 + USART_BAUD_USARTFP_MODE_offset
+USART5_RXPL                             EQU SERCOM5 + USART_RXPL_offset
+USART5_INTENCLR                         EQU SERCOM5 + USART_INTENCLR_offset
+USART5_INTENSET                         EQU SERCOM5 + USART_INTENSET_offset
+USART5_INTFLAG                          EQU SERCOM5 + USART_INTFLAG_offset
+USART5_STATUS                           EQU SERCOM5 + USART_STATUS_offset
+USART5_SYNCBUSY                         EQU SERCOM5 + USART_SYNCBUSY_offset
+USART5_DATA                             EQU SERCOM5 + USART_DATA_offset
+USART5_DBGCTRL                          EQU SERCOM5 + USART_DBGCTRL_offset
 
 
+USART_CTRLA_SWRST                       EQU BIT_POS_0
+USART_CTRLA_ENABLE                      EQU BIT_POS_1
+USART_CTRLA_MODE_USART_EXT_CLK          EQU 0x00
+USART_CTRLA_MODE_USART_INT_CLK          EQU 0x04
+USART_CTRLA_MODE_SPI_SLAVE              EQU 0x08
+USART_CTRLA_MODE_SPI_MASTER             EQU 0x0c
+USART_CTRLA_MODE_I2C_SLAVE              EQU 0x10
+USART_CTRLA_MODE_I2C_MASTER             EQU 0x14
+USART_CTRLA_RUNSTDBY                    EQU BIT_POS_7
+USART_CTRLA_IBON                        EQU BIT_POS_8
+USART_CTRLA_SAMPR                       EQU 0x0
+USART_CTRLA_SAMPR_Pos                   EQU 13
+USART_CTRLA_TXPO                        EQU 0x0
+USART_CTRLA_TXPO_Pos                    EQU 16
+USART_CTRLA_RXPO                        EQU 0x0
+USART_CTRLA_RXPO_Pos                    EQU 20
+USART_CTRLA_SAMPA                       EQU 0x0
+USART_CTRLA_SAMPA_Pos                   EQU 22
+USART_CTRLA_FORM                        EQU 0x0
+USART_CTRLA_FORM_Pos                    EQU 24
+USART_CTRLA_CMODE                       EQU BIT_POS_28
+USART_CTRLA_CPOL                        EQU BIT_POS_29
+USART_CTRLA_DORD                        EQU BIT_POS_30
+
+USART_BAUD_BAUD                         EQU 0x00
+USART_BAUD_BAUD_Pos                     EQU 0
+
+USART_BAUD_FRAC_MODE_BAUD               EQU 0x00
+USART_BAUD_FRAC_MODE_BAUD_Pos           EQU 0
+USART_BAUD_FRAC_MODE_FP                 EQU 0x0
+USART_BAUD_FRAC_MODE_FP_Pos             EQU 13
+
+USART_BAUD_FRACFP_MODE_BAUD             EQU 0x00
+USART_BAUD_FRACFP_MODE_BAUD_Pos         EQU 0
+USART_BAUD_FRACFP_MODE_FP               EQU 0x0
+USART_BAUD_FRACFP_MODE_FP_Pos           EQU 13
+
+USART_BAUD_USARTFP_MODE_BAUD            EQU 0x00
+USART_BAUD_USARTFP_MODE_BAUD_Pos        EQU 0
+
+USART_RXPL_RXPL                         EQU 0x00
+USART_RXPL_RXPL_Pos                     EQU 0
+
+USART_INTENCLR_DRE                      EQU BIT_POS_0
+USART_INTENCLR_TXC                      EQU BIT_POS_1
+USART_INTENCLR_RXC                      EQU BIT_POS_2
+USART_INTENCLR_RXS                      EQU BIT_POS_3
+USART_INTENCLR_CTSIC                    EQU BIT_POS_4
+USART_INTENCLR_RXBRK                    EQU BIT_POS_5
+USART_INTENCLR_ERROR                    EQU BIT_POS_7
+
+USART_INTENSET_DRE                      EQU BIT_POS_0
+USART_INTENSET_TXC                      EQU BIT_POS_1
+USART_INTENSET_RXC                      EQU BIT_POS_2
+USART_INTENSET_RXS                      EQU BIT_POS_3
+USART_INTENSET_CTSIC                    EQU BIT_POS_4
+USART_INTENSET_RXBRK                    EQU BIT_POS_5
+USART_INTENSET_ERROR                    EQU BIT_POS_7
+
+USART_INTFLAG_DRE                       EQU BIT_POS_0
+USART_INTFLAG_TXC                       EQU BIT_POS_1
+USART_INTFLAG_RXC                       EQU BIT_POS_2
+USART_INTFLAG_RXS                       EQU BIT_POS_3
+USART_INTFLAG_CTSIC                     EQU BIT_POS_4
+USART_INTFLAG_RXBRK                     EQU BIT_POS_5
+USART_INTFLAG_ERROR                     EQU BIT_POS_7
+
+USART_STATUS_PERR                       EQU BIT_POS_0
+USART_STATUS_FERR                       EQU BIT_POS_1
+USART_STATUS_BUFOVF                     EQU BIT_POS_2
+USART_STATUS_CTS                        EQU BIT_POS_3
+USART_STATUS_ISF                        EQU BIT_POS_4
+USART_STATUS_COLL                       EQU BIT_POS_5
+
+USART_SYNCBUSY_SWRST                    EQU BIT_POS_0
+USART_SYNCBUSY_ENABLE                   EQU BIT_POS_1
+USART_SYNCBUSY_CTRLB                    EQU BIT_POS_2
+
+USART_DATA_DATA                         EQU 0x00
+USART_DATA_DATA_Pos                     EQU 0
+
+USART_DBGCTRL_DBGSTOP                   EQU BIT_POS_0
 
 
 
-	END
+
+END
