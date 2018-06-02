@@ -1,20 +1,20 @@
 __Vectors 
-	DCD	__initial_sp								; Top of Stack 0x0000
-	DCD	Reset_HANDLER								; Reset Handler 0x0004
-	DCD	NMI_HANDLER									; NMI Handler 0x0008
-	DCD	HardFault_HANDLER						; Hard Fault Handler 0x000c
- 	DCD	0														; Reserved 0x0010
-	DCD	0														; Reserved 0x0014
-	DCD	0														; Reserved 0x0018
-	DCD	0														; Reserved 0x001c
-	DCD	0														; Reserved 0x0020
-	DCD	0														; Reserved 0x0024
-	DCD	0														; Reserved 0x0028
-	DCD	SVC_HANDLER									; SVCall Handler 0x002c
-	DCD	0														; Reserved 0x0030
-	DCD	0														; Reserved 0x0034
-	DCD	PendSV_HANDLER							; PendSV Handler 0x0038
-	DCD	SysTick_HANDLER							; SysTick Handler 0x003c
+	DCD	__initial_sp              ; Top of Stack 0x0000
+	DCD	Reset_HANDLER             ; Reset Handler 0x0004
+	DCD	NMI_HANDLER               ; NMI Handler 0x0008
+	DCD	HardFault_HANDLER         ; Hard Fault Handler 0x000c
+ 	DCD	0                         ; Reserved 0x0010
+	DCD	0                         ; Reserved 0x0014
+	DCD	0                         ; Reserved 0x0018
+	DCD	0                         ; Reserved 0x001c
+	DCD	0                         ; Reserved 0x0020
+	DCD	0                         ; Reserved 0x0024
+	DCD	0                         ; Reserved 0x0028
+	DCD	SVC_HANDLER               ; SVCall Handler 0x002c
+	DCD	0                         ; Reserved 0x0030
+	DCD	0                         ; Reserved 0x0034
+	DCD	PendSV_HANDLER            ; PendSV Handler 0x0038
+	DCD	SysTick_HANDLER           ; SysTick Handler 0x003c
 		
 ;/* Peripheral handlers */
 	DCD PM_HANDLER                    ;/*  0 Power Manager */
