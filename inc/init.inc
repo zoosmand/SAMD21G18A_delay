@@ -31,8 +31,8 @@ x32kStartup	EQU 0x05 << SYSCTRL_XOSC32K_STARTUP_Pos
 	LDR tmp, =SYSCTRL_XOSC32K_ONDEMAND
 	BICS tmpd, tmp
 	LDR tmp, =\
-		SYSCTRL_XOSC32K_ENABLE \
-	| SYSCTRL_XOSC32K_XTALEN \
+    SYSCTRL_XOSC32K_ENABLE \
+  | SYSCTRL_XOSC32K_XTALEN \
 	| SYSCTRL_XOSC32K_EN32K \
 	| SYSCTRL_XOSC32K_RUNSTDBY \
 	| x32kStartup
@@ -53,7 +53,7 @@ i32kStartup	EQU 0x05 << SYSCTRL_OSC32K_STARTUP_Pos
 	LDR tmp, =SYSCTRL_OSC32K_ONDEMAND
 	BICS tmpd, tmp
 	LDR tmp, =\
-		SYSCTRL_OSC32K_ENABLE \
+	  SYSCTRL_OSC32K_ENABLE \
 	| SYSCTRL_OSC32K_EN32K \
 	| SYSCTRL_OSC32K_EN1K \
 	| SYSCTRL_OSC32K_RUNSTDBY \
@@ -76,7 +76,7 @@ genId1	EQU 0x01
 gen1Div	EQU 0x00
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		genId1 << GCLK_GENDIV_ID_Pos \
+	  genId1 << GCLK_GENDIV_ID_Pos \
 	| gen1Div << GCLK_GENDIV_DIV_Pos
 	STR tmpd, [tmpa, #GCLK_GENDIV_offset]
 	
@@ -104,7 +104,7 @@ genId0 	EQU 0x00
 gen0Div	EQU 0x00 ; no divide. full speed on ~ 48MHz 
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		genId0 << GCLK_GENDIV_ID_Pos \
+	  genId0 << GCLK_GENDIV_ID_Pos \
 	| gen0Div << GCLK_GENDIV_DIV_Pos
 	STR tmpd, [tmpa, #GCLK_GENDIV_offset]
 
@@ -114,7 +114,7 @@ _INIT_GCLK_wait_sync_GEN0_DIV
 	BCS _INIT_GCLK_wait_sync_GEN0_DIV
 
 	LDR tmpd, =\
-		genId0 << GCLK_GENCTRL_ID_Pos\
+	  genId0 << GCLK_GENCTRL_ID_Pos\
 	| GCLK_GENCTRL_SRC_DFLL48M \
 	| GCLK_GENCTRL_GENEN
 	STR tmpd, [tmpa, #GCLK_GENCTRL_offset]
@@ -152,7 +152,7 @@ _INIT_SYSCTRL_wait_DFLL
 dfllFine		EQU 0x0200 << SYSCTRL_DFLLVAL_FINE_Pos
 dfllCoarse	EQU 0x1d << SYSCTRL_DFLLVAL_COARSE_Pos
 	LDR tmpd, =\
-		dfllFine \
+	  dfllFine \
 	| dfllCoarse
 	STR tmpd, [tmpa, #SYSCTRL_DFLLVAL_offset]
 
@@ -179,7 +179,7 @@ dfllCstep		EQU 0x01 << SYSCTRL_DFLLMUL_CSTEP_Pos
 ;--------------------------------------------------------------;
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		GCLK_CLKCTRL_ID_DFLL48 \
+	  GCLK_CLKCTRL_ID_DFLL48 \
 	+ GCLK_CLKCTRL_GEN_GCLK1	\
 	+ GCLK_CLKCTRL_CLKEN
 	STRH tmpd, [tmpa, #GCLK_CLKCTRL_offset] 
@@ -203,7 +203,7 @@ genId2 	EQU 0x02
 gen2Div	EQU 0x08 ; max possible divider for OSCULP32K, to make WDT period longer 
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		genId2 << GCLK_GENDIV_ID_Pos \
+	  genId2 << GCLK_GENDIV_ID_Pos \
 	| gen2Div << GCLK_GENDIV_DIV_Pos
 	STR tmpd, [tmpa, #GCLK_GENDIV_offset]
 
@@ -220,7 +220,7 @@ genId3 	EQU 0x03 << GCLK_GENDIV_ID_Pos
 gen3Div	EQU 0x08 << GCLK_GENDIV_DIV_Pos
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		genId3 \
+	  genId3 \
 	| gen3Div
 	STR tmpd, [tmpa, #GCLK_GENDIV_offset]
 
@@ -230,7 +230,7 @@ _INIT_GCLK_wait_sync_GEN3_DIV
 	BCS _INIT_GCLK_wait_sync_GEN3_DIV
 
 	LDR tmpd, =\
-		genId3 \
+	  genId3 \
 	| GCLK_GENCTRL_SRC_OSC32K
 	STRH tmpd, [tmpa, #GCLK_GENCTRL_offset] 
 	
@@ -244,7 +244,7 @@ _INIT_GCLK_wait_GEN3
 	LDR tmpd, [tmpa, #GCLK_GENCTRL_offset]
 
 	LDR tmp, =\
-		GCLK_GENCTRL_GENEN	\
+	  GCLK_GENCTRL_GENEN	\
 	| GCLK_GENCTRL_OE \
 	| GCLK_GENCTRL_DIVSEL
 	
@@ -264,7 +264,7 @@ genId4 	EQU 0x04 << GCLK_GENDIV_ID_Pos
 gen4Div	EQU 0x00 << GCLK_GENDIV_DIV_Pos
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		genId4 \
+	  genId4 \
 	| gen4Div
 	STR tmpd, [tmpa, #GCLK_GENDIV_offset]
 
@@ -274,7 +274,7 @@ _INIT_GCLK_wait_sync_GEN4_DIV
 	BCS _INIT_GCLK_wait_sync_GEN4_DIV
 
 	LDR tmpd, =\
-		genId4 \
+	  genId4 \
 	| GCLK_GENCTRL_SRC_OSC8M
 	STRH tmpd, [tmpa, #GCLK_GENCTRL_offset] 
 	
@@ -322,7 +322,7 @@ _INIT_GCLK_wait_GEN4_run
 	; Timer 4-5 feed by GEN4 (OSC8M)
 	LDR tmpa, =GCLK
 	LDR tmpd, =\
-		GCLK_CLKCTRL_CLKEN \
+	  GCLK_CLKCTRL_CLKEN \
 	| GCLK_CLKCTRL_GEN_GCLK4 \
 	| GCLK_CLKCTRL_ID_TC4_TC5
 	STRH tmpd, [tmpa, #GCLK_CLKCTRL_offset]
@@ -336,7 +336,7 @@ _INIT_GCLK_Timer4_5_wait_sync
 ;--------------------------------------------------------------;
 	; Watchdog feed by GEN2 (OCLULP32K)
 	LDR tmpd, =\
-		GCLK_CLKCTRL_CLKEN \
+	  GCLK_CLKCTRL_CLKEN \
 	| GCLK_CLKCTRL_GEN_GCLK2 \
 	| GCLK_CLKCTRL_ID_WDT
 	STRH tmpd, [tmpa, #GCLK_CLKCTRL_offset]
@@ -357,7 +357,7 @@ ledPin EQU BIT_POS_4
 	LDR tmpd, =ledPin
 	STR tmpd, [tmpa, #PORT_DIRSET_offset]
 	LDR tmpd, =\
-		ledPin \
+	  ledPin \
 	| PORT_WRCONFIG_HWSEL \
 	| PORT_WRCONFIG_WRPINCFG \
 	| PORT_WRCONFIG_DRVSTR
@@ -372,7 +372,7 @@ ledPin EQU BIT_POS_4
 ;======================== Init Watchdog =======================;
 	LDR tmpa, =WDT
 	LDR tmpd, =\
-		WDT_CONFIG_PER_16K \
+	  WDT_CONFIG_PER_16K \
 	| WDT_CONFIG_WINDOW_16K
 	STRB tmpd, [tmpa, #WDT_CONFIG_offset]
 
@@ -399,7 +399,7 @@ sysTickVal EQU 0x3fffff
 
 	LDR tmpd, [tmpa]
 	LDR tmp, =\
-		SYST_CSR_ENABLE \
+	  SYST_CSR_ENABLE \
 	| SYST_CSR_TICKINT \
 	| SYST_CSR_CLOCKSOURCE
 	ORRS tmpd, tmp
