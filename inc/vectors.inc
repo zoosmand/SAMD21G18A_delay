@@ -1,4 +1,4 @@
-  __Vectors 
+__Vectors 
   DCD	__initial_sp                ; Top of Stack 0x0000
   DCD	Reset_HANDLER               ; Reset Handler 0x0004
   DCD	NMI_HANDLER                 ; NMI Handler 0x0008
